@@ -29,7 +29,7 @@ pic2.onclick = () => {
   window.open(url, '_self')
 }
 pic3.onclick = () => {
-  let url = ('#ums')
+  let url = ('../pages/tums.html')
   window.open(url, '_self')
 }
 pic4.onclick = () => {
@@ -141,3 +141,23 @@ scroll_up.onclick = () => {
     behavior : 'smooth'
   })
 }
+
+//  slider code 
+
+sliderholder = document.querySelector(".slider-holder")
+leftbutton = sliderholder.querySelector('#left button')
+rightbutton = sliderholder.querySelector("#right button")
+itemcontainer = document.querySelector(".main-bio-container")
+
+console.log(sliderholder , leftbutton);
+//  actions 
+leftbutton.addEventListener("click" , ()=>{
+  itemcontainer.scrollLeft -= itemcontainer.querySelector(".contain").offsetWidth + 20
+  
+})
+
+rightbutton.addEventListener("click" , ()=>{
+  itemcontainer.scrollLeft += itemcontainer.querySelector(".contain").offsetWidth + 20
+  
+})
+
