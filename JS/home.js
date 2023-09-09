@@ -121,7 +121,12 @@ pic4.onclick = () => {
 // End About
 
 // Satrt Biograph
+let show = document.querySelector('.our-partners .show span')
+let div_two = document.querySelector('.our-partners .our-partner-container .div-two')
 
+show.addEventListener('click', () => {
+  div_two.classList.toggle('active')
+})
 // End Biograph
 
 // Scroll Up
@@ -142,22 +147,18 @@ scroll_up.onclick = () => {
   })
 }
 
-//  slider code 
-
+// Statr Slider code 
 sliderholder = document.querySelector(".slider-holder")
 leftbutton = sliderholder.querySelector('#left button')
 rightbutton = sliderholder.querySelector("#right button")
 itemcontainer = document.querySelector(".main-bio-container")
 
-console.log(sliderholder , leftbutton);
-//  actions 
-leftbutton.addEventListener("click" , ()=>{
+rightbutton.addEventListener("click" , ()=>{
   itemcontainer.scrollLeft -= itemcontainer.querySelector(".contain").offsetWidth + 20
-  
 })
 
-rightbutton.addEventListener("click" , ()=>{
+leftbutton.addEventListener("click" , ()=>{
   itemcontainer.scrollLeft += itemcontainer.querySelector(".contain").offsetWidth + 20
-  
 })
+// End Slider Code
 
