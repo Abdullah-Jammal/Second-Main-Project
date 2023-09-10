@@ -125,7 +125,12 @@ let show = document.querySelector('.our-partners .show span')
 let div_two = document.querySelector('.our-partners .our-partner-container .div-two')
 
 show.addEventListener('click', () => {
-  div_two.classList.toggle('active')
+  div_two.classList.toggle('active');
+  if(div_two.classList.contains('active')) {
+    show.innerHTML = 'اخفاء'
+  } else {
+    show.innerHTML = 'المزيد'
+  }
 })
 // End Biograph
 
