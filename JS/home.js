@@ -122,15 +122,16 @@ pic4.onclick = () => {
 
 // Satrt Biograph
 let show = document.querySelector('.our-partners .show span')
-let div_two = document.querySelector('.our-partners .our-partner-container .div-two')
+let div_one = document.querySelector('.our-partners .our-partner-container .div-one')
 
 show.addEventListener('click', () => {
-  div_two.classList.toggle('active');
-  if(div_two.classList.contains('active')) {
+if (div_one.style.height === '220px') {
+    div_one.style.height = 'auto'
     show.innerHTML = 'اخفاء'
-  } else {
-    show.innerHTML = 'المزيد'
-  }
+} else {
+  div_one.style.height = '220px'
+  show.innerHTML = 'المزيد'
+}
 })
 // End Biograph
 
@@ -153,9 +154,9 @@ scroll_up.onclick = () => {
 }
 
 // Statr Slider code 
-sliderholder = document.querySelector(".slider-holder")
-leftbutton = sliderholder.querySelector('#left button')
-rightbutton = sliderholder.querySelector("#right button")
+
+leftbutton = document.querySelector('#left-two button')
+rightbutton = document.querySelector("#right button")
 itemcontainer = document.querySelector(".main-bio-container")
 
 rightbutton.addEventListener("click" , ()=>{

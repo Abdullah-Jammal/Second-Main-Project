@@ -12,56 +12,6 @@ close_btn.onclick = () => {
 }
 // End Header
 
-// Start Open Our Services Links
-let pic_1 = document.querySelector('.box-one .pic-1');
-let pic_2 = document.querySelector('.box-one .pic-2')
-let pic_3 = document.querySelector('.box-one .pic-3')
-let pic_4 = document.querySelector('.box-two .pic-4')
-let pic_5 = document.querySelector('.box-two .pic-5')
-let pic_6 = document.querySelector('.box-two .pic-6')
-
-pic_1.onclick = () => {
-  let url = '../pages/lessons.html'
-  window.open(url, '_self')
-}
-
-pic_5.onclick = () => {
-  let url = '../pages/schools.html'
-  window.open(url, '_self')
-}
-
-pic_3.onclick = () => {
-  let url = '../pages/ta3lemPlus.html'
-  window.open(url, '_self')
-}
-
-pic_2.onclick = () => {
-  let url = '#advanced'
-  window.open(url, '_self')
-}
-
-pic_6.onclick = () => {
-  let url = '#ums'
-  window.open(url, '_self')
-}
-// End Open Our Services Links
-
-// Satrt Biograph
-let biograph_one = document.querySelectorAll('.biography .one')
-
-biograph_one.forEach((ele) => {
-  ele.onclick = () => {
-    removeBio()
-    ele.classList.add('active')
-  }
-})
-
-function removeBio() {
-  for(let i = 0; i < biograph_one.length; i++) {
-    biograph_one[i].classList.remove('active')
-  }
-}
-
 // Scroll Up
 let scroll_up = document.querySelector('.scroll-up')
 
@@ -80,4 +30,17 @@ scroll_up.onclick = () => {
   })
 }
 
+// Statr Slider code 
+sliderholder = document.querySelector(".slider-holder")
+leftbutton = sliderholder.querySelector('#left button')
+rightbutton = sliderholder.querySelector("#right button")
+itemcontainer = document.querySelector(".main-bio-container")
 
+rightbutton.addEventListener("click" , ()=>{
+  itemcontainer.scrollLeft -= itemcontainer.querySelector(".contain").offsetWidth + 20
+})
+
+leftbutton.addEventListener("click" , ()=>{
+  itemcontainer.scrollLeft += itemcontainer.querySelector(".contain").offsetWidth + 20
+})
+// End Slider Code
