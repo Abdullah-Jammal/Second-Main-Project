@@ -120,20 +120,6 @@ pic4.onclick = () => {
 
 // End About
 
-// Satrt Biograph
-let show = document.querySelector('.our-partners .show span')
-let div_one = document.querySelector('.our-partners .our-partner-container .div-one')
-
-show.addEventListener('click', () => {
-if (div_one.style.height === '220px') {
-    div_one.style.height = 'auto'
-    show.innerHTML = 'اخفاء'
-} else {
-  div_one.style.height = '220px'
-  show.innerHTML = 'المزيد'
-}
-})
-// End Biograph
 
 // Scroll Up
 let scroll_up = document.querySelector('.scroll-up')
