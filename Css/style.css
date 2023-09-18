@@ -5,6 +5,7 @@
   --main-transition: 300ms;
   --second-main-color: #074e87;
   --orange-color: #ff9933;
+  --light-purple : #463770;
 }
 @font-face {
   font-family: ExtraBold;
@@ -29,7 +30,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: Plain;
-  /* overflow-x: hidden; */
 }
 body::-webkit-scrollbar {
   width: 8px;
@@ -111,17 +111,27 @@ body::-webkit-scrollbar-thumb {
 }
 /* End Bg-img */
 
-
 /* Start Header */
 
 /* Start Ta3leem UMS Header */
 .tums-header {
   padding: 14px 30px;
 }
-.tums-header .head .mainUl li a {
+.tums-header .head nav > ul li a {
   color: #fff;
 }
 /* End Ta3leem UMS Header */
+
+/* Start School Header */
+@media (max-width: 1100px) {
+  .school-header {
+    display: none;
+  }
+  .class-header {
+    padding: 4px;
+  }
+}
+/* End School Header */
 
 /* Start Lesson Header */
 .lesson-header {
@@ -173,7 +183,7 @@ display: block;
 opacity: 1;
 }
 .dropDown {
-  background-color: white;
+  background-color: var(--orange-color);
   display: none;
   position: absolute;
   border-radius: 6px;
@@ -213,7 +223,7 @@ opacity: 1;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 1400px;
+  max-width: 1400px;
   border-radius: 20px;
   padding-top: 0;
   padding-bottom: 0;
@@ -297,6 +307,7 @@ i.menu-icon {
 }
 .secend-header {
   display: none;
+  padding: 6px;
 }
 @media (max-width: 1100px) {
 
@@ -2132,7 +2143,7 @@ padding: 20px 0;
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  width: 1450px;
+  max-width: 1450px;
   overflow: hidden;
   overflow-x: scroll;
   scroll-behavior: smooth;
@@ -2143,7 +2154,7 @@ padding: 20px 0;
     justify-content: flex-start;
   }
 }
-.biography .main-bio-container::-webkit-scrollbar{
+.biography .main-bio-container::-webkit-scrollbar {
   display: none;
 }
 .biography .bio-container {
@@ -2184,12 +2195,35 @@ padding: 20px 0;
   align-items: center;
   width: 1430px;
 }
+@media (max-width: 1450px) {
+  .main-bio-container {
+    max-width: 1126px;
+  }
+  .biography .contain .team {
+    max-width: 1126px;
+    flex-direction: column;
+  }
+  .contain {
+    box-shadow: none;
+    height: auto;
+  }
+}
+@media (max-width: 1240px) {
+  .main-bio-container {
+    max-width: 900px;
+  }
+  .biography .contain .team {
+    max-width: 900px;
+  }
+  .contain {
+    box-shadow: none;
+  }
+}
 .biography .contain .team .card-one {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 30px; */
 }
 .biography .contain h3 {
   font-size: 34px;
@@ -2285,6 +2319,14 @@ color: white;
     cursor: pointer;
     transition: 300ms;
 }
+@media (max-width: 1240px) {
+  .right-two {
+    display: none;
+  }
+  #left {
+    display: none;
+  }
+}
 #left-two button:hover,
 #left button:hover,
 #right button:hover {
@@ -2309,9 +2351,10 @@ color: white;
   }
   .biography .contain .team {
     width: 700px;
+    /* flex-direction: column; */
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 1010px) {
   .biography .contain .team .box-one,
   .biography .contain .team .box-two {
     flex-direction: column;
@@ -2730,6 +2773,17 @@ color: white;
   color: var(--main-color);
   margin-top: 40px;
 }
+@media (max-width: 983px) {
+  .school-section .school-info p {
+    text-align: center;
+  }
+  .school-section .school-info h2 {
+    text-align: center;
+  }
+  .school-section .school-info h2::before {
+    display: none;
+  }
+}
 @media (max-width: 740px) {
   .school-section .school-info h2::before {
     display: none;
@@ -2824,7 +2878,7 @@ color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 @media (max-width: 1200px) {
@@ -2841,17 +2895,18 @@ color: white;
 }
 .our-teams .container-teams .box-one .one {
   border-radius: 3rem;
-  background-color: var(--main-color);
-  width: 250px;
+  background: #463770;
+  width: 300px;
   padding: 6px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   transition: 300ms;
+  margin: 12px;
 }
 .our-teams .container-teams .box-one .one:hover {
-  scale: 1.2;
+  scale: 1.1;
   rotate: 1deg;
 }
 .our-teams .container-teams .box-one img {
@@ -2859,7 +2914,7 @@ color: white;
 }
 .our-teams .container-teams .box-one .one p {
   font-weight: bold;
-  color: #fff6ff;;
+  color: #fff6ff;
 }
 @media (max-width: 400px) {
   .our-teams .container-teams .box-one .one p {
@@ -3083,6 +3138,18 @@ margin: 20px 0;
   border-radius: 12px;
   transition: 300ms;
 }
+@media (max-width: 1275px) {
+  .newServices .newServices-container .services-boxes {
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  .newServices .newServices-container .services-boxes .box-one .one {
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+  }
+}
 .newServices .newServices-container .services-boxes .box-one .one:hover {
   scale: 1.1;
 }
@@ -3093,6 +3160,17 @@ margin: 20px 0;
   width: 230px;
   color: white;
   font-size: 14px;
+}
+@media (max-width: 650px) {
+  .newServices .newServices-container .services-boxes .box-one .one {
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+  }
+  .newServices .newServices-container .services-boxes .box-one .one .info h3,
+  .newServices .newServices-container .services-boxes .box-one .one .info p {
+    text-align: center;
+  }
 }
 .newServices .newServices-container .services-boxes .box-one .one .img img {
   width: 280px;
@@ -3131,6 +3209,26 @@ margin: 20px 0;
   max-width: 550px;
   color: var(--main-color);
   font-weight: 700px;
+  margin: 0 6px;
+}
+@media (max-width: 1200px) {
+  .ta3leem-platform .paltform-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+  }
+  .ta3leem-platform .paltform-container .platform-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ta3leem-platform .paltform-container .platform-info p {
+    text-align: center;
+  }
+  .ta3leem-platform .paltform-container .platform-info h2::before {
+    display: none;
+  }
 }
 .ta3leem-platform .paltform-container .platform-boxes .box-one {
   display: flex;
@@ -3148,6 +3246,11 @@ margin: 20px 0;
   position: relative;
   transition: 500ms;
   z-index: 2;
+}
+@media (max-width: 750px) {
+  .ta3leem-platform .paltform-container .platform-boxes .box-one {
+    flex-direction: column;
+  }
 }
 .ta3leem-platform .paltform-container .platform-boxes .box-one .one:hover {
   scale: 1.1;
@@ -3181,10 +3284,8 @@ width: 50%;
 .ta3leem-platform .paltform-container .platform-boxes .box-one .one p {
   color: white;
   font-weight: bold;
-
 }
 .ta3leem-platform .paltform-container .platform-boxes .box-one .one img {
   width: 120px;
 }
-
 /* End Ta3leem Platform */
