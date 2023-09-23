@@ -30,17 +30,3 @@ scroll_up.onclick = () => {
   })
 }
 
-// Statr Slider code 
-sliderholder = document.querySelector(".slider-holder")
-leftbutton = sliderholder.querySelector('#left button')
-rightbutton = sliderholder.querySelector("#right button")
-itemcontainer = document.querySelector(".main-bio-container")
-
-rightbutton.addEventListener("click" , ()=>{
-  itemcontainer.scrollLeft -= itemcontainer.querySelector(".contain").offsetWidth + 20
-})
-
-leftbutton.addEventListener("click" , ()=>{
-  itemcontainer.scrollLeft += itemcontainer.querySelector(".contain").offsetWidth + 20
-})
-// End Slider Code
