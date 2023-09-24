@@ -256,18 +256,27 @@ i.menu-icon {
   max-width: 90%;
   margin: auto;
 }
-@media (max-width: 1100px) {
+.secend-header-withoutBG {
+  display: none;
+  padding: 4px 26px;
+  background-color: var(--blue-color);
+}
+@media (max-width: 1230px) {
   nav .mainUl {
     display: none;
+  }
+  html {
+    direction: rtl;
   }
   i.menu-icon {
     display: block;
   }
-  .header-one {
+  .header-one  {
     flex-direction: row-reverse;
     display: none;
   }
-  .secend-header {
+  .secend-header,
+  .secend-header-withoutBG {
     display: block;
   }
 }
@@ -405,7 +414,7 @@ i.menu-icon {
   color: white;
   font-weight: bold;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .main-page {
     padding: 0 15px;
   }
@@ -429,7 +438,7 @@ i.menu-icon {
     display: block;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .main-page {
     justify-content: center;
     align-items: center;
@@ -1226,6 +1235,10 @@ footer .footer-container .footer-section ul li:hover {
     height: auto;
     padding: 20px;
   }
+  footer .footer-container ul {
+    padding: 0;
+    margin-left: 0;
+  }
   footer .footer-container ul li {
     text-align: center;
   }
@@ -1638,6 +1651,11 @@ margin: 20px 0;
   right: 50%;
   transform: translateX(50%);
 }
+@media (max-width: 1230px) {
+  .protection-head {
+    display: none;
+  }
+}
 .protection .protection-container {
   display: flex;
   max-width: 1400px;
@@ -1661,6 +1679,7 @@ margin: 20px 0;
   text-align: center;
   color: var(--light-purplr);
   font-weight: bold;
+  padding: 0 12px;
 }
 .protection .protection-container .box-one img {
   width: 300px;
@@ -1698,10 +1717,20 @@ margin: 20px 0;
   justify-content: center;
   margin-bottom: 30px;
 }
+@media (max-width: 900px) {
+  .protection .protection-container .box-two .list-one .one {
+    flex-direction: column;
+    text-align: center;
+  }
+  .protection .protection-container .box-two .list-one .one img {
+    margin: 0;
+  }
+}
 .protection .protection-container .box-two .list-one .one p {
   width: 200px;
   font-size: 14px;
   color: var(--main-color);
   font-weight: bold;
+  /* margin: auto; */
 }
 /* End Protection */
