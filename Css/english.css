@@ -2150,14 +2150,16 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   }
 }
 .contain-adv {
-  /* max-width: 85%; */
+  max-width: 85%;
   margin: 60px auto;
 }
 .adv-sec-con {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin-top: 40px;
 }
 .train-sesion-adv h2 {
   color: #65123A;
@@ -2175,29 +2177,19 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   font-size: 32px;
 }
 .train-sesion-adv .session-one {
-  width: 340px;
+  width: 380px;
   height: 360px;
   background-color: #fff3fd;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 12px;
-  margin-bottom: 12px;
-  transition: 400ms;
+  transition: 500ms;
   box-shadow: 1px 1px 5px var(--pink);
-  margin: 60px 20px;
-  perspective: 100px;
-  animation: scroll 50s linear infinite;
 }
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(340px + 8));
-  }
+.train-sesion-adv .session-one:hover .para-info{
+  background-color: var(--sky-blue);
 }
 .train-sesion-adv .session-one::before {
   content: '';
@@ -2208,10 +2200,10 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   height: 0;
   background-color: var(--light-pink);
   opacity: .3;
-  transition: 400ms;
+  transition: 500ms;
 }
 .train-sesion-adv .session-one:hover {
-  transform: translateY(-20px);
+  transform: translateY(-26px);
 }
 .train-sesion-adv .session-one:hover::before {
   height: 100%;
@@ -2224,7 +2216,14 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   width: 250px;
   text-align: center;
   z-index: 10;
-  height: 200px;
+}
+.train-sesion-adv .session-one .para-info {
+  width: 300px;
+  background-color: rgb(255, 0, 93);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 500ms;
 }
 .train-sesion-adv .session-one h3 {
   color: #65123A;
