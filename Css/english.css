@@ -2265,9 +2265,23 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   font-size: 16px;
   max-width: 580px;
 }
-.tsms-main-page .image-tsms {
-  width: 700px;
+.tsms-main-page .image-tsms img {
+  width: 600px;
   z-index: -20;
+}
+@media (max-width: 1100px) {
+  .tsms-main-page {
+    flex-direction: column;
+  }
+  .tsms-main-page .image-tsms img {
+    display: none;
+  }
+  .tsms-main-page .main-info {
+    text-align: center;
+  }
+  .tsms-main-page {
+    left: 50%;
+  }
 }
 /* <!-- Start Points --> */
 .point-of-sms {
@@ -2348,6 +2362,19 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   font-weight: bold;
   transition: 600ms;
 }
+@media (max-width: 1100px) {
+  .point-of-sms {
+    direction: ltr;
+  }
+  .point-of-sms h2 {
+    text-align: center;
+  }
+  .point-of-sms h2::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+  }
+}
 /* <!-- End Points --> */
 
 /* <!-- Start Beneficiary --> */
@@ -2357,12 +2384,12 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
 }
 .sms-beneficiary .beneficary-boxes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .sms-beneficiary .beneficary-boxes .box-one {
-  width: 340px;
+  width: 320px;
   height: 400px;
   background-color: var(--light-purplr);
   border-radius: 16px;
@@ -2372,6 +2399,15 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   justify-content: center;
   margin: 10px;
   transition: 500ms;
+}
+@media (max-width: 1100px) {
+  .sms-beneficiary h2 {
+    text-align: center;
+  }
+  .sms-beneficiary h2::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .sms-beneficiary .beneficary-boxes .box-one:hover {
   background-color: var(--main-color);
@@ -2443,6 +2479,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
 @media (max-width: 1100px) {
   .login-video .videos {
     flex-direction: column;
+    box-shadow: none;
   }
   .login-video .videos .iframe {
     order: -1;

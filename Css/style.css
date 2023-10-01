@@ -134,6 +134,16 @@ body::-webkit-scrollbar-thumb {
 .tums-header .head nav > ul li a {
   color: var(--main-color);
 }
+.tums-header {
+  background-color: #fff;
+  padding: 0 30px;
+  top: 14px;
+  position: absolute;
+  width: 90%;
+  border-radius: 20px;
+  right: 50%;
+  transform: translateX(50%);
+}
 /* End Ta3leem UMS Header */
 
 /* Start School Header */
@@ -270,7 +280,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   margin-right: -70px;
 }
 header ul li {
@@ -3676,6 +3686,20 @@ width: 50%;
   width: 700px;
   z-index: -20;
 }
+@media (max-width: 1100px) {
+  .tsms-main-page {
+    flex-direction: column;
+  }
+  .tsms-main-page .image-tsms img {
+    display: none;
+  }
+  .tsms-main-page .main-info {
+    text-align: center;
+  }
+  .tsms-main-page {
+    right: 50%;
+  }
+}
 /* <!-- Start Points --> */
 .point-of-sms {
   width: 90%;
@@ -3755,6 +3779,19 @@ width: 50%;
   font-weight: bold;
   transition: 600ms;
 }
+@media (max-width: 1100px) {
+  .point-of-sms {
+    direction: ltr;
+  }
+  .point-of-sms h2 {
+    text-align: center;
+  }
+  .point-of-sms h2::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+  }
+}
 /* <!-- End Points --> */
 
 /* <!-- Start Beneficiary --> */
@@ -3764,12 +3801,12 @@ width: 50%;
 }
 .sms-beneficiary .beneficary-boxes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .sms-beneficiary .beneficary-boxes .box-one {
-  width: 340px;
+  width: 320px;
   height: 400px;
   background-color: var(--light-purplr);
   border-radius: 16px;
@@ -3786,6 +3823,15 @@ width: 50%;
 .sms-beneficiary .beneficary-boxes .box-one:hover h3 {
   background-color: rgb(255, 0, 93);
   color: #fff;
+}
+@media (max-width: 1100px) {
+  .sms-beneficiary h2 {
+    text-align: center;
+  }
+  .sms-beneficiary h2::before {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 .sms-beneficiary .beneficary-boxes .box-one h3 {
   background-color: #fff;
@@ -3850,6 +3896,7 @@ width: 50%;
 @media (max-width: 1100px) {
   .login-video .videos {
     flex-direction: column;
+    box-shadow: none;
   }
   .login-video .videos .iframe {
     order: -1;
@@ -3947,7 +3994,11 @@ width: 50%;
   align-items: center;
 }
 .relibality .documantation img {
-  width: 400px;
+  width: 350px;
+  transition: 300ms;
+}
+.relibality .documantation img:hover {
+  scale: 1.07;
 }
 @media (max-width: 1200px) {
   .relibality .documantation {
