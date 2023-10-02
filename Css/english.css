@@ -133,12 +133,12 @@ display: block;
 opacity: 1;
 }
 .dropDown {
-  background-color: var(--orange);
+  background-color: var(--blue-color);
   display: none;
   position: absolute;
   border-radius: 6px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 50%;
+  transform: translateX(50%);
   padding: 12px;
   transition: 300ms;
   opacity: 0;
@@ -158,7 +158,7 @@ opacity: 1;
   color: white;
 }
 .dropDown li a {
-  color: var(--main-color);
+  color: var(--orange);
 }
 .dropDown li:hover a {
   color: white;
@@ -176,7 +176,7 @@ opacity: 1;
   margin-right: auto;
   max-width: 90%;
   border-radius: 20px;
-  padding: 4px 20px;
+  padding: 0 30px;
 }
 header .head {
   display: flex;
@@ -344,7 +344,7 @@ i.menu-icon {
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
-  max-width: 87%;
+  max-width: 84%;
   margin: auto;
 }
 .main-page .right-div {
@@ -957,8 +957,9 @@ width: 50%;
 }
 .newServices .newServices-container .services-boxes {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  gap: 30px;
 }
 .newServices .newServices-container .services-boxes .box-one .one {
   background-color: var(--main-color);
@@ -1177,9 +1178,6 @@ footer {
   align-items: center;
   flex-direction: column;
   padding-bottom: 8px;
-  /* border-top-right-radius: 16px;
-  border-top-left-radius: 16px; */
-  /* text-align: center; */
 }
 footer .copyRight {
   color: var(--main-gray);
@@ -1223,9 +1221,6 @@ footer .social-media a i {
   font-size: 20px;
   transition: var(--main-transition);
 }
-footer .social-media .icons {
-  margin-left: -40px;
-}
 footer .social-media a i:hover {
   opacity: .6;
 }
@@ -1268,16 +1263,22 @@ footer .footer-container .footer-section ul li:hover {
 }
 .tums-header .head nav > ul li a {
   color: var(--main-color);
+  transition: 300ms;
+}
+.tums-header .head nav ul li:hover a {
+  color: var(--orange);
 }
 .tums-header {
   background-color: #fff;
   padding: 0 30px;
-  top: 14px;
-  position: absolute;
+  top: 20px;
+  position: fixed;
   width: 90%;
   border-radius: 20px;
   right: 50%;
   transform: translateX(50%);
+  transition: 400ms;
+  z-index: 9;
 }
 .TSMS {
   background-color: var(--light-purplr);
@@ -1752,7 +1753,7 @@ margin: 20px 0;
 .protection-head {
   background-color: #fff;
   padding: 0 30px;
-  top: 14px;
+  top: 20px;
   position: absolute;
   width: 90%;
   border-radius: 20px;
@@ -2599,3 +2600,582 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   }
 }
 /* End TSMS */
+
+
+
+/* Start Lessons */
+.div-lesson {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 600px; */
+}
+@media (max-width:1100px) {
+  .lessons {
+    direction: rtl;
+    /* height: 800px; */
+  }
+}
+@media (max-width:960px) {
+  .lessons .lesson-img {
+    order: -1;
+
+  }
+}
+@media (max-width:650px) {
+  .lessons .lesson-img {
+    display: none;
+  }
+}
+.lessons .title-lesson {
+  max-width: 600px;
+}
+.lessons .title-lesson h2 {
+  color: var(--main-color);
+  font-size: 40px;
+  position: relative;
+}
+.lessons .title-lesson p {
+  color: var(--main-text-color);
+  font-weight: 700;
+}
+@media (max-width:960px) {
+  .lessons {
+    flex-direction: column;
+  }
+  .div-lesson {
+    flex-direction: column;
+  }
+  .lessons .title-lesson h2 {
+    text-align: center;
+  }
+  .lessons .title-lesson p {
+    text-align: center;
+  }
+}
+.high-school {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.high-school h2,
+.primary-school h2,
+.elementry-school h2 {
+  text-align: center;
+  color: var(--main-color);
+  border: 3px solid var(--main-color);
+  border-radius: 6px;
+  width: fit-content;
+  margin: 50px auto;
+  padding: 6px 10px;
+  position: relative;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.high-school h2:hover,
+.primary-school h2:hover,
+.elementry-school h2:hover {
+  color: white;
+}
+.high-school h2::before,
+.primary-school h2::before,
+.elementry-school h2::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: rgb(56, 0, 89);
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: var(--main-transition);
+}
+.high-school h2:hover::before,
+.primary-school h2:hover::before,
+.elementry-school h2:hover::before {
+  width: 101%;
+  height: 103%;
+}
+.high-school h2::after {
+  right: -26px;
+}
+.high-school .teachers {
+  display: flex;
+  flex-flow:wrap;
+  justify-content: center;
+  align-items: center;
+}
+.high-school .teachers > div,
+.primary-school .primary-container > div,
+.elementry-school .elementry-container > div  {
+  width: 450px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  margin: 14px;
+  cursor: pointer;
+  position: relative;
+  transition: var(--main-transition);
+}
+@media (max-width: 560px) {
+  .high-school .teachers > div,
+.primary-school .primary-container > div,
+.elementry-school .elementry-container > div {
+  width: 370px;
+}
+}
+.high-school .teachers > div:hover,
+.primary-school .primary-container > div:hover,
+.elementry-school .elementry-container > div:hover {
+  scale: 1.12;
+  rotate: -1deg;
+  opacity: .7;
+  z-index: 2;
+}
+.high-school .teachers > div:hover::before {
+  width: 100%;
+  z-index: 2;
+}
+.high-school .teachers .item1 {
+  background-image: url(../Images/high-school-teachers/abdrazak.png);
+}
+.high-school .teachers .item2 {
+  background-image: url(../Images/high-school-teachers/adam.png);
+}
+.high-school .teachers .item3 {
+  background-image: url(../Images/high-school-teachers/ahia_1.png);
+}
+.high-school .teachers .item4 {
+  background-image: url(../Images/high-school-teachers/ahia_2.png);
+}
+.high-school .teachers .item5 {
+  background-image: url(../Images/high-school-teachers/ahia_ramla.png);
+}
+.high-school .teachers .item6 {
+  background-image: url(../Images/high-school-teachers/MicrosoftTeams-image\ \(5\).png);
+}
+.high-school .teachers .item7 {
+  background-image: url(../Images/high-school-teachers/gold.png);
+}
+.high-school .teachers .item8 {
+  background-image: url(../Images/high-school-teachers/mahmoud.png);
+}
+.high-school .teachers .item9 {
+  background-image: url(../Images/high-school-teachers/mathkh.png);
+}
+.high-school .teachers .item10 {
+  background-image: url(../Images/high-school-teachers/mustafa.png);
+}
+.high-school .teachers .item11 {
+  background-image: url(../Images/high-school-teachers/nour.png);
+}
+.high-school .teachers .item12 {
+  background-image: url(../Images/high-school-teachers/rezan1.png);
+}
+.high-school .teachers .item13 {
+  background-image: url(../Images/high-school-teachers/saliem.png);
+}
+/* End Lessons */
+
+/* Start Primary */
+.primary-school {
+  padding: 20px;
+  margin-top: 30px;
+}
+.primary-school .primary-container,
+.elementry-school .elementry-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.primary-school .primary-container .box1 {
+  background-image: url(../Images/primary/arabic.png);
+}
+.primary-school .primary-container .box2 {
+  background-image: url(../Images/primary/bio.png);
+}
+.primary-school .primary-container .box3 {
+  background-image: url(../Images/primary/chemistry.png);
+}
+.primary-school .primary-container .box4 {
+  background-image: url(../Images/primary/english.png);
+}
+.primary-school .primary-container .box5 {
+  background-image: url(../Images/primary/math.png);
+}
+.primary-school .primary-container .box6 {
+  background-image: url(../Images/primary/physics\ .png);
+}
+/* End Primary */
+
+/* Start Elementry School */
+.elementry-school .elementry-container .box1 {
+  background-image: url(../Images/Elementry/ARgrammar.png);
+}
+.elementry-school .elementry-container .box2 {
+  background-image: url(../Images/Elementry/english.png);
+}
+.elementry-school .elementry-container .box3 {
+  background-image: url(../Images/Elementry/math.png);
+}
+.elementry-school .elementry-container .box4 {
+  background-image: url(../Images/Elementry/read.png);
+}
+.elementry-school .elementry-container .box5 {
+  background-image: url(../Images/Elementry/science.png);
+}
+.elementry-school .elementry-container .box6 {
+  background-image: url(../Images/Elementry/social.png);
+}
+/* End Elementry School */
+
+/* Start Leaders */
+.leaders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 320px);
+  gap: 100px;
+  background-color: rgb(251, 244, 255);
+  padding: 30px;
+  height: 900px;
+}
+@media (max-width: 1100px) {
+  .leaders {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 320px);
+    gap: 100px;
+    background-color: rgb(251, 244, 255);
+    padding: 30px;
+    height: 1400px;
+  }
+}
+@media (max-width: 760px) {
+  .leaders {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 320px);
+    gap: 100px;
+    background-color: rgb(251, 244, 255);
+    padding: 30px;
+    height: 2800px;
+  }
+}
+.leaders > div {
+  text-align: center;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.leaders > div img {
+  width: 150px;
+}
+.leaders .leader-one::before {
+  content: 'Ghassan Al-Bayati';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 0;
+  left: 0;
+  color: rgb(251, 244, 255);
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--main-transition);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.leaders .leader-one:hover::before {
+  width: 100%;
+}
+.leaders .leader-one::after {
+  content: 'The former head of the Mathematics Department at Al-Mutamizeen High School. He ranked first in the country in passing percentages for the sixth grade of middle school. He was sent to teach in Algeria, and taught in many model schools.';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transition: var(--main-transition);
+  right: 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(251, 244, 255);
+  overflow: hidden;
+}
+.leaders .leader-one:hover::after {
+  width: 100%;
+}
+
+.leaders .leader-two::before {
+  content: 'Basma Al-Azzawi';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 0;
+  left: 0;
+  color: rgb(251, 244, 255);
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--main-transition);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.leaders .leader-two:hover::before {
+  width: 100%;
+}
+.leaders .leader-two::after {
+  content: 'Twenty years of supervising the correction of ministerial exams and setting questions. She holds a degree in life sciences from the University of Baghdad';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transition: var(--main-transition);
+  right: 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(251, 244, 255);
+  overflow: hidden;
+}
+.leaders .leader-two:hover::after {
+  width: 100%;
+}
+
+/* Three */
+.leaders .leader-three::before {
+  content: 'Alaa Al-Dagher';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 0;
+  left: 0;
+  color: rgb(251, 244, 255);
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--main-transition);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.leaders .leader-three:hover::before {
+  width: 100%;
+}
+.leaders .leader-three::after {
+  content: 'More than thirty years of experience, he has many books of thanks from Rusafa First Education';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transition: var(--main-transition);
+  right: 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(251, 244, 255);
+  overflow: hidden;
+}
+.leaders .leader-three:hover::after {
+  width: 100%;
+}
+
+/* Four */
+.leaders .leader-four::before {
+  content: 'Muhammad Al-Taie';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 0;
+  left: 0;
+  color: rgb(251, 244, 255);
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--main-transition);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.leaders .leader-four:hover::before {
+  width: 100%;
+}
+.leaders .leader-four::after {
+  content: 'Thirty-four years of experience... Senior teacher, and Head of the Physics Department at Al-Motamayez Secondary School.';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transition: var(--main-transition);
+  right: 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(251, 244, 255);
+  overflow: hidden;
+}
+.leaders .leader-four:hover::after {
+  width: 100%;
+}
+/* Five */
+.leaders .leader-five::before {
+  content: 'Hadi Mohsen Ali';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 0;
+  left: 0;
+  color: rgb(251, 244, 255);
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--main-transition);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.leaders .leader-five:hover::before {
+  width: 100%;
+}
+.leaders .leader-five::after {
+  content: 'More than thirty years of experience, he has many books of thanks from Rusafa First Education';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transition: var(--main-transition);
+  right: 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(251, 244, 255);
+  overflow: hidden;
+}
+.leaders .leader-five:hover::after {
+  width: 100%;
+}
+/* Six */
+.leaders .leader-six::before {
+  content: 'Imad Al-Ali';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 0;
+  left: 0;
+  color: rgb(251, 244, 255);
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--main-transition);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.leaders .leader-six:hover::before {
+  width: 100%;
+}
+.leaders .leader-six::after {
+  content: 'Twenty-seven years of experience in the field of teaching chemistry. He taught in distinguished secondary schools in Baghdad.';
+  position: absolute;
+  width: 0;
+  height: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transition: var(--main-transition);
+  right: 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(251, 244, 255);
+  overflow: hidden;
+}
+.leaders .leader-six:hover::after {
+  width: 100%;
+}
+/* End Leaders */
+
+/* Start Find Level */
+.find-level {
+  background-color: var(--main-color);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.find-level a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 20px;
+  background-color: white;
+  margin: 24px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: var(--main-transition);
+  font-weight: bold;
+  text-align: center;
+}
+.find-level a:hover {
+  background-color: #074e87;
+  color: #e9eaf4;
+}
+.school-head {
+  background-color: #fff;
+  padding: 0 30px;
+  top: 20px;
+  position: absolute;
+  width: 90%;
+  border-radius: 20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+/* Start Lesson Header */
+.lesson-header {
+  margin-top: 12px;
+  max-width: 1400px;
+}
+.lesson-header .mainUl li a {
+  color: var(--main-color);
+}
+/* End Lesson Header */

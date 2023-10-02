@@ -544,6 +544,37 @@ function activateBtn(item) {
   item.classList.add('active')
 }
 
+window.addEventListener('scroll', function() {
+  if(window.scrollY >= 200) {
+    document.querySelector('.TSMS .tums-header').style.transform = 'translate(50%, -100px)';
+    document.querySelector('.TSMS .tums-header').style.opacity = 0;
+  } else {
+    document.querySelector('.TSMS .tums-header').style.transform = '';
+    document.querySelector('.TSMS .tums-header').style.opacity = 1;
+  }
+})
+}
 
+if (document.querySelector('.tums-main-page')) {
+  window.addEventListener('scroll', function() {
+    if(window.scrollY >= 200) {
+      document.querySelector('.first-picture .tums-header').style.transform = 'translate(50%, -100px)';
+      document.querySelector('.first-picture .tums-header').style.opacity = 0;
+    } else {
+      document.querySelector('.first-picture .tums-header').style.transform = '';
+      document.querySelector('.first-picture .tums-header').style.opacity = 1;
+    }
+  })
+}
 
+if(document.querySelector('.lesson-main-page')) {
+  window.addEventListener('scroll', function() {
+    if(window.scrollY >= 200) {
+      document.querySelector('.tums-header').style.transform = 'translate(50%, -100px)';
+      document.querySelector('.tums-header').style.opacity = 0;
+    } else {
+      document.querySelector('.tums-header').style.transform = '';
+      document.querySelector('.tums-header').style.opacity = 1;
+    }
+  })
 }
