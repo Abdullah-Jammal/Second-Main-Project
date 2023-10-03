@@ -12,6 +12,7 @@
   --light-pink : #ffbac0;
   --dark-gray : #65656b;
   --main-transition : 300ms;
+  --green : #14888B;
 }
 @font-face {
   font-family: ExtraBold;
@@ -2449,8 +2450,8 @@ color: white;
 
 /* Start Protection */
 .protection {
-  background-color: var(--main-gray);
-  height: 110vh;
+  background-color: var(--green);
+  height: 100vh;
   padding: 100px 0 0 0;
 }
 .protection-head {
@@ -2468,86 +2469,73 @@ color: white;
     display: none;
   }
 }
-.protection .protection-container {
-  display: flex;
-  max-width: 1400px;
-  align-items: flex-start;
-  justify-content: space-around;
-  margin: auto;
-}
-.protection .protection-container .box-one {
-  max-width: 400px;
+.proctored-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.protection .protection-container .box-one h2 {
+.proctored-container .proctored-image img {
+  width: 400px;
+}
+.proctored-container .info {
+  max-width: 500px;
   text-align: center;
-  color: var(--main-color);
+  color: white;
+}
+.proctored-container .info h2 {
   font-size: 32px;
 }
-.protection .protection-container .box-one p {
-  text-align: center;
-  color: var(--light-purplr);
-  font-weight: bold;
-  padding: 0 12px;
+
+/*   <!-- Start Proctored Feature -->  */
+.proctored-features {
+  max-width: 70%;
+  margin: 20px auto;
 }
-.protection .protection-container .box-one img {
-  width: 300px;
+.proctored-features h2 {
+  color: var(--green);
+  font-size: 32px;
+  position: relative;
+  /* text-align: center; */
+  margin-bottom: 70px;
 }
-.protection .protection-container .box-two {
+.proctored-features h2::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: var(--green);
+  bottom: -10px;
+  right: 0;
+  /* transform: translateX(50%); */
+}
+.proctored-features .proc-feat-container {
   display: flex;
-  max-width: 620px;
   justify-content: space-between;
-  height: 600px;
-  margin-top: 14px;
+  align-items: center;
 }
-@media (max-width: 1150px) {
-  .protection .protection-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .protection {
-    height: auto;
-  }
-}
-@media (max-width: 700px) {
-  .protection .protection-container .box-two {
-    flex-direction: column;
-    height: auto;
-  }
-}
-.protection .protection-container .box-two .list-one .one img {
-  width: 70px;
-  margin-right: 20px;
-}
-.protection .protection-container .box-two .list-one .one {
+.proctored-features .proc-feat-container .one {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 500px;
   margin-bottom: 30px;
+  /* flex-direction: column; */
 }
-@media (max-width: 900px) {
-  .protection .protection-container .box-two .list-one .one {
-    flex-direction: column;
-    text-align: center;
-  }
-  .protection .protection-container .box-two .list-one .one img {
-    margin: 0;
-  }
-  .protection .protection-container .box-two {
-    height: auto;
-  }
+.proctored-features .proc-feat-container .one img {
+  width: 100px;
 }
-.protection .protection-container .box-two .list-one .one p {
-  width: 200px;
-  font-size: 14px;
-  color: var(--main-color);
+.proctored-features .proc-feat-container .one p {
   font-weight: bold;
+  color: var(--green);
+  width: 350px;
+  /* text-align: center; */
 }
+/*   <!-- End Proctored Feature -->  */
+
 /* End Protection */
+
+
 /* Start Teams */
 .our-teams {
   background: rgb(255,255,255);
