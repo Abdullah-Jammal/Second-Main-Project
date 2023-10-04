@@ -578,3 +578,39 @@ if(document.querySelector('.lesson-main-page')) {
     }
   })
 }
+
+if (document.querySelector('.English-Advanced-Flag')) {
+  window.addEventListener('scroll', function() {
+    if(window.scrollY >= 200) {
+      document.querySelector('.tums-header').style.transform = 'translate(50%, -100px)';
+      document.querySelector('.tums-header').style.opacity = 0;
+    } else {
+      document.querySelector('.tums-header').style.transform = '';
+      document.querySelector('.tums-header').style.opacity = 1;
+    }
+  })
+}
+
+if(document.querySelector('.Englis-TUMS-Flag')) {
+  window.addEventListener('scroll', function() {
+    if(window.scrollY >= 200) {
+      document.querySelector('.tums-header').style.transform = 'translate(50%, -100px)';
+      document.querySelector('.tums-header').style.opacity = 0;
+    } else {
+      document.querySelector('.tums-header').style.transform = '';
+      document.querySelector('.tums-header').style.opacity = 1;
+    }
+  })
+}
+
+if(document.querySelector('.English-Proctored-Flag')) {
+  window.addEventListener('scroll', function() {
+    if(window.scrollY >= 200) {
+      document.querySelector('.protection-head').style.transform = 'translate(50%, -100px)';
+      document.querySelector('.protection-head').style.opacity = 0;
+    } else {
+      document.querySelector('.protection-head').style.transform = '';
+      document.querySelector('.protection-head').style.opacity = 1;
+    }
+  })
+}
