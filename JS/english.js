@@ -30,3 +30,14 @@ scroll_up.onclick = () => {
   })
 }
 
+if(document.querySelector('#flagPageone')) {
+  window.addEventListener('scroll', function() {
+    if(window.scrollY >= 200) {
+      document.querySelector('.main-header').style.transform = 'translate(50%, -100px)';
+      document.querySelector('.main-header').style.opacity = 0;
+    } else {
+      document.querySelector('.main-header').style.transform = '';
+      document.querySelector('.main-header').style.opacity = 1;
+    }
+  })
+}

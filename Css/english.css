@@ -172,13 +172,15 @@ opacity: 1;
 }
 .main-header {
   background-color: #fff;
-  /* position: fixed; */
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
-  border-radius: 20px;
   padding: 0 30px;
+  top: 20px;
+  position: fixed;
+  width: 90%;
+  border-radius: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  transition: 400ms;
+  z-index: 9;
 }
 header .head {
   display: flex;
@@ -258,8 +260,7 @@ i.menu-icon {
 }
 .secend-header {
   display: none;
-  padding: 6px;
-  max-width: 90%;
+  padding: 10px 30px;
   margin: auto;
 }
 .secend-header-withoutBG {
@@ -267,7 +268,7 @@ i.menu-icon {
   padding: 4px 26px;
   background-color: var(--green);
 }
-@media (max-width: 1100px) {
+@media (max-width: 1230px) {
   nav .mainUl {
     display: none;
   }
@@ -277,7 +278,7 @@ i.menu-icon {
   i.menu-icon {
     display: block;
   }
-  .header-one  {
+  .main-header  {
     flex-direction: row-reverse;
     display: none;
   }
@@ -2603,43 +2604,48 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
 }
 /* End TSMS */
 
-
-
 /* Start Lessons */
+.lessons {
+  background-color: var(--main-color);
+  height: 100vh;
+  padding: 0 20px;
+}
 .div-lesson {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  /* height: 600px; */
+  position: relative;
+  top: 55%;
+  transform: translateY(-50%);
 }
-@media (max-width:1100px) {
+@media (max-width:1230px) {
   .lessons {
-    direction: rtl;
-    /* height: 800px; */
+    direction: ltr;
   }
 }
 @media (max-width:960px) {
   .lessons .lesson-img {
     order: -1;
-
   }
 }
-@media (max-width:650px) {
+@media (max-width:960px) {
   .lessons .lesson-img {
     display: none;
+  }
+  .lessons {
+    height: 80vh;
   }
 }
 .lessons .title-lesson {
   max-width: 600px;
 }
 .lessons .title-lesson h2 {
-  color: var(--main-color);
-  font-size: 40px;
+  color: var(--main-gray);
+  font-size: 32px;
   position: relative;
 }
 .lessons .title-lesson p {
-  color: var(--main-text-color);
-  font-weight: 700;
+  color: var(--main-gray);
 }
 @media (max-width:960px) {
   .lessons {
@@ -3140,11 +3146,14 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
 
 /* Start Find Level */
 .find-level {
-  background-color: var(--main-color);
-  height: 300px;
+  background-color: var(--light-orange);
+  width: 70%;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px auto;
+  border-radius: 100px;
 }
 .find-level a {
   text-decoration: none;
@@ -3157,6 +3166,26 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   transition: var(--main-transition);
   font-weight: bold;
   text-align: center;
+  width: 200px;
+}
+@media (max-width: 920px) {
+  .find-level {
+    background-color: #fff;
+  }
+  .find-level a {
+    background-color: var(--blue-color);
+    color: var(--main-gray);
+    width: fit-content;
+  }
+}
+@media (max-width: 415px) {
+  .find-level {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .find-level a {
+    width: 200px;
+  }
 }
 .find-level a:hover {
   background-color: #074e87;
@@ -3166,11 +3195,24 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   background-color: #fff;
   padding: 0 30px;
   top: 20px;
-  position: absolute;
+  position: fixed;
   width: 90%;
   border-radius: 20px;
   right: 50%;
   transform: translateX(50%);
+  transition: 400ms;
+}
+.absoulute-pos-two {
+  display: none;
+  background-color: var(--main-color);
+}
+@media (max-width: 1230px) {
+  .school-head {
+    display: none;
+  }
+  .absoulute-pos-two {
+    display: block;
+  }
 }
 /* Start Lesson Header */
 .lesson-header {

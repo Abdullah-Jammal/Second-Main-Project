@@ -1,7 +1,7 @@
 // Start Header
 let menu_icon = document.querySelector('.menu-icon');
 let mobileNav = document.querySelector('.nav-on-mobile');
-let close_btn = document.querySelector('.close-icon')
+let close_btn = document.querySelector('.close-icon');
 
 menu_icon.onclick = () => {
   mobileNav.style.width = '100%'
@@ -10,6 +10,7 @@ menu_icon.onclick = () => {
 close_btn.onclick = () => {
   mobileNav.style.width = '0'
 }
+
 // End Header
 
 // Start About
@@ -56,3 +57,14 @@ scroll_up.onclick = () => {
 }
 
 
+if(document.querySelector('#flagPageone')) {
+  window.addEventListener('scroll', function() {
+    if(window.scrollY >= 200) {
+      document.querySelector('.main-header').style.transform = 'translate(50%, -100px)';
+      document.querySelector('.main-header').style.opacity = 0;
+    } else {
+      document.querySelector('.main-header').style.transform = '';
+      document.querySelector('.main-header').style.opacity = 1;
+    }
+  })
+}
