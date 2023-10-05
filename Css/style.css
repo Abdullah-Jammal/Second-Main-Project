@@ -778,25 +778,12 @@ i.menu-icon {
 #about{
   padding: 0 0;
   margin: auto;
-  max-width: 85%;
+  max-width: 90%;
 }
 #about .about-contain {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-}
-@media (max-width: 1270px) {
-  #about {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    margin: auto;
-  }
-  #about .about-contain {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 #about .about-contain .box-one .info {
   margin-bottom: 80px;
@@ -837,6 +824,22 @@ i.menu-icon {
   align-items: center;
   margin-left: -16px;
 }
+@media (max-width: 1280px) {
+  #about {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin: auto;
+  }
+  #about .about-contain {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #about .about-contain .box-one .list ul li {
+    font-size: 16px;
+  }
+}
 #about .about-contain .box-one .list ul li:hover {
   color: rgb(250, 243, 255);
 }
@@ -864,16 +867,13 @@ i.menu-icon {
     border-radius: 8px;
   }
 }
-#about .about-contain .box-two {
-  max-width: 90%;
-}
 #about .about-contain .box-two .box-cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #about .about-contain .box-two .box-cont img {
-  width: 400px;
+  width: 380px;
   transition: 300ms;
   cursor: pointer;
 }
@@ -2106,15 +2106,18 @@ transform: translateX(-50%);
 transition: 300ms;
 z-index: -1;
 }
-.biography .contain .team .box-one .bio-para:hover::before,
-.biography .contain .team .box-two .bio-para:hover::before {
-  width: 100%;
+.biography .contain .team .box-two .one:hover .bio-para::before {
   height: calc(100% + 30px);
   padding: 3px;
 }
-.biography .contain .team .box-one .bio-para:hover,
-.biography .contain .team .box-two .bio-para:hover {
+.biography .contain .team .box-one .one:hover .bio-para {
 color: white;
+}
+.biography .contain .team .box-one .one:hover .bio-para::before {
+  height: calc(100% + 30px);
+}
+.biography .contain .team .box-two .one:hover .bio-para {
+  color: white;
 }
 @media (max-width: 1010px) {
   .biography .contain .team .box-one,
