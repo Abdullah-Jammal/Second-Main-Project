@@ -1,3 +1,17 @@
+// Start Header
+let menu_icon = document.querySelector('.menu-icon');
+let mobileNav = document.querySelector('.nav-on-mobile');
+let close_btn = document.querySelector('.close-icon')
+
+menu_icon.onclick = () => {
+  mobileNav.style.width = '100%'
+}
+
+close_btn.onclick = () => {
+  mobileNav.style.width = '0'
+}
+// End Header
+
 window.addEventListener('scroll', function() {
     if(window.scrollY >= 200) {
       document.querySelector('.school-head').style.transform = 'translate(50%, -100px)';
