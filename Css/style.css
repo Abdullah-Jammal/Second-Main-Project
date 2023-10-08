@@ -993,6 +993,13 @@ footer .footer-container .footer-section ul li:hover {
 footer .footer-container .foot-info {
   margin-left: 80px;
 }
+footer .footer-container .foot-info ul .location {
+  text-align: center;
+}
+footer .footer-container .foot-info ul .location .loca{
+  color: var(--advance-color);
+  font-size: 30px;
+}
 @media (max-width: 1050px) {
   footer .footer-container {
     flex-direction: column;
@@ -1377,36 +1384,13 @@ footer .footer-container .foot-info {
 .leaders > div img {
   width: 150px;
 }
-.leaders .leader-one::before {
-  content: 'غسان البياتي';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-one:hover::before {
-  width: 100%;
-}
 .leaders .leader-one::after {
   content: 'الرئيس السابق لقسم الرياضيات في ثانوية المتميزين، حائز على المرتبة الاولى على مستوى القطر بنسب النجاح للصف السادس الاعدادي، أُوفد للتدريس في الجزائر، ود ّرس في العديد من المدارس النموذجية';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
   right: 0;
   text-align: center;
@@ -1414,41 +1398,20 @@ footer .footer-container .foot-info {
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-one:hover::after {
-  width: 100%;
-}
-
-.leaders .leader-two::before {
-  content: 'بسمة العزاوي';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-two:hover::before {
-  width: 100%;
+  height: 40%;
 }
 .leaders .leader-two::after {
   content: 'عشرون عاما من الإشراف على تصحيح الامتحانات الوزارية ووضع الاسئلة. حاصلة على شهادة اختصاص علوم الحياة من جامعة بغداد';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
   right: 0;
   text-align: center;
@@ -1456,42 +1419,21 @@ footer .footer-container .foot-info {
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-two:hover::after {
-  width: 100%;
+  height: 40%;
 }
-
 /* Three */
-.leaders .leader-three::before {
-  content: 'علاء الداغر';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-three:hover::before {
-  width: 100%;
-}
 .leaders .leader-three::after {
   content: 'اكثر من ثلاثين عاما من الخبرة، حاصل على العديد من كتب الشكر من تربية الرصافة الاولى';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
   right: 0;
   text-align: center;
@@ -1499,42 +1441,21 @@ footer .footer-container .foot-info {
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-three:hover::after {
-  width: 100%;
+  height: 40%;
 }
-
 /* Four */
-.leaders .leader-four::before {
-  content: 'محمد الطائي';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-four:hover::before {
-  width: 100%;
-}
 .leaders .leader-four::after {
   content: 'اربعة وثلاثون عاما من الخبرة... مدرس أقدم، ورئيس قسم الفيزياء في ثانوية المتميزين.';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
   right: 0;
   text-align: center;
@@ -1542,41 +1463,21 @@ footer .footer-container .foot-info {
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-four:hover::after {
-  width: 100%;
+  height: 40%;
 }
 /* Five */
-.leaders .leader-five::before {
-  content: 'هادي محسن علي';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-five:hover::before {
-  width: 100%;
-}
 .leaders .leader-five::after {
   content: 'اكثر من ثلاثين عاما من الخبرة، حاصل على العديد من كتب الشكر من تربية الرصافة الاولى';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
   right: 0;
   text-align: center;
@@ -1584,41 +1485,21 @@ footer .footer-container .foot-info {
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-five:hover::after {
-  width: 100%;
+  height: 40%;
 }
 /* Six */
-.leaders .leader-six::before {
-  content: 'عماد العلي';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-six:hover::before {
-  width: 100%;
-}
 .leaders .leader-six::after {
   content: 'سبعة وعشرون عاماً من الخبرة في مجال التدريس لمادة الكيمياء، د ّرس في ثانويات المتميزين في بغداد.';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
   right: 0;
   text-align: center;
@@ -1626,9 +1507,12 @@ footer .footer-container .foot-info {
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-six:hover::after {
-  width: 100%;
+  height: 40%;
 }
 /* End Leaders */
 
@@ -3632,71 +3516,56 @@ width: 50%;
   right: 50%;
   transform: translateX(50%);
 }
-.advanced-services .serv-one {
+.serv-advance-container {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.serv-advance-container .one {
+  width: 350px;
+  height: 450px;
+  background-color: var(--blue-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  transition: 400ms;
+}
+.serv-advance-container .one h3 {
   background-color: var(--advance-color);
-  width: 60%;
-  padding: 30px;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: white;
-  border-top-right-radius: 36px;
-  border-bottom-right-radius: 36px;
-  height: 230px;
-  transition: 300ms;
+  color: #fff;
+  width: 250px;
+  padding: 6px;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: 400ms;
 }
-.advanced-services .serv-one:hover {
-  background-color: var(--light-purplr);
-}
-.advanced-services .serv-one h3,
-.advanced-services .serv-two h3 {
-  font-size: 26px;
-  margin-top: -10px;
-}
-.advanced-services .serv-one p,
-.advanced-services .serv-two p {
-  font-size: 18px;
+.serv-advance-container .one p {
+  width: 320px;
+  text-align: center;
   color: var(--main-gray);
-  margin-top: -10px;
+  font-weight: bold;
+  font-size: 14px;
 }
-.advanced-services .serv-two {
-  background-color: var(--advance-color);
-  width: 60%;
-  margin-left: auto;
-  padding: 30px;
-  color: white;
-  border-top-left-radius: 36px;
-  border-bottom-left-radius: 36px;
-  height: 230px;
-  transition: 300ms;
+.serv-advance-container .one img {
+  width: 280px;
+  border-radius: 6px;
+  height: 180px;
 }
-.advanced-services .serv-two:hover {
+.serv-advance-container .one:hover h3 {
+  opacity: .8;
+}
+.serv-advance-container .one:hover {
   background-color: var(--light-purplr);
-}
-@media (max-width: 1100px) {
-  .advanced-services {
-    direction: ltr;
-  }
-}
-@media (max-width: 1100px) {
-  .advanced-services .serv-one {
-    height: auto;
-  }
-  .advanced-services .serv-two {
-    height: auto;
-  }
-}
-@media (max-width: 600px) {
-  .advanced-services .serv-two {
-    margin: 14px auto;
-    border-radius: 20px;
-    text-align: center;
-  }
-  .advanced-services .serv-one {
-    margin: auto;
-    border-radius: 20px;
-    text-align: center;
-  }
+  scale: 1.1;
 }
 /* End Our Services Advanced */
 
@@ -3825,7 +3694,7 @@ width: 50%;
   color: white;
 }
 .tsms-main-page .main-info h2 {
-  font-size: 36px;
+  font-size: 30px;
 }
 .tsms-main-page .main-info p {
   font-size: 16px;
@@ -4176,3 +4045,39 @@ width: 50%;
   background-color: var(--main-gray);
 }
 /* End Form Container */
+
+/* Start Application Download */
+.application-pic {
+  max-width: 70%;
+  margin: 26px auto;
+}
+.application-pic h2 {
+  color: var(--main-color);
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+}
+.application-pic h2::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 1px;
+  background-color: var(--main-color);
+  bottom: -10px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.application-pic .app-pic-cont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 250px;
+}
+.application-pic .app-pic-cont img {
+  width: 180px;
+  transition: 300ms;
+}
+.application-pic .app-pic-cont img:hover {
+  opacity: .6;
+}
+/* End Application Download */
