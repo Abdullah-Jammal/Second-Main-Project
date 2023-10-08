@@ -958,7 +958,7 @@ footer .footer-container .img img {
 footer .footer-container ul {
   list-style: none;
   margin-top: -12px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 footer .footer-container ul li {
   color: var(--blue-color);
@@ -986,6 +986,7 @@ footer .social-media a i:hover {
 footer .footer-container .footer-section ul li {
   transition: 300ms;
   cursor: pointer;
+  text-align: center;
 }
 footer .footer-container .footer-section ul li:hover {
   color: var(--light-orange);
@@ -999,6 +1000,14 @@ footer .footer-container .foot-info ul .location {
 footer .footer-container .foot-info ul .location .loca{
   color: var(--advance-color);
   font-size: 30px;
+}
+footer .footer-container .footer-section img {
+  width: 160px;
+  border-radius: 8px;
+  transition: 300ms;
+}
+footer .footer-container .footer-section img:hover {
+  opacity: .7;
 }
 @media (max-width: 1050px) {
   footer .footer-container {
@@ -3472,11 +3481,11 @@ width: 50%;
   margin-left: 10px;
 }
 .firm-advance .box-adv-one .info h3 {
-  color: var(--advance-color);
+  color: var(--blue-color);
   font-size: 24px;
 }
 .firm-advance .box-adv-one .info p {
-  color: var(--advance-color);
+  color: var(--main-color);
   font-size: 16px;
   margin-top: -20px;
   font-weight: bold;
@@ -4076,6 +4085,7 @@ width: 50%;
 .application-pic .app-pic-cont img {
   width: 180px;
   transition: 300ms;
+  border-radius: 8px;
 }
 .application-pic .app-pic-cont img:hover {
   opacity: .6;
