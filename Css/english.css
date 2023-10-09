@@ -593,14 +593,14 @@ transform: translateX(-50%);
 transition: 300ms;
 z-index: -1;
 }
-.biography .contain .team .box-one .bio-para:hover::before,
-.biography .contain .team .box-two .bio-para:hover::before {
+.biography .contain .team .box-one .one:hover .bio-para::before,
+.biography .contain .team .box-two .one:hover .bio-para::before {
   width: 100%;
   height: calc(100% + 30px);
   padding: 3px;
 }
-.biography .contain .team .box-one .bio-para:hover,
-.biography .contain .team .box-two .bio-para:hover {
+.biography .contain .team .box-one .one:hover .bio-para,
+.biography .contain .team .box-two .one:hover .bio-para {
 color: white;
 }
 @media (max-width: 1010px) {
@@ -1224,9 +1224,25 @@ footer .social-media a i:hover {
 footer .footer-container .footer-section ul li {
   transition: 300ms;
   cursor: pointer;
+  text-align: center;
 }
 footer .footer-container .footer-section ul li:hover {
   color: var(--light-orange);
+}
+footer .footer-container .foot-info ul .location {
+  text-align: center;
+}
+footer .footer-container .foot-info ul .location .loca{
+  color: var(--advance-color);
+  font-size: 30px;
+}
+footer .footer-container .footer-section img {
+  width: 160px;
+  border-radius: 8px;
+  transition: 300ms;
+}
+footer .footer-container .footer-section img:hover {
+  opacity: .7;
 }
 @media (max-width: 1050px) {
   footer .footer-container {
@@ -1254,7 +1270,48 @@ footer .footer-container .footer-section ul li:hover {
 
 /* Start tums feature */
 /* Start Ta3leem UMS Header */
-
+/* Start Main Page TUMS */
+.main-page-tums {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  position: relative;
+  height: 110vh;
+}
+.main-page-tums .info {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-page-tums .info h1 {
+  color: var(--light-orange);
+  font-size: 52px;
+  letter-spacing: 5px;
+  margin-bottom: -10px;
+  position: relative;
+}
+.main-page-tums .info h1::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background-color: var(--light-orange);
+  bottom: 5px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.main-page-tums .info h2 {
+  color: #fff;
+  font-size: 28px;
+}
+.main-page-tums .info p {
+  color: var(--main-gray);
+  text-align: center;
+}
 .tums-header {
   padding: 14px 30px;
 }
@@ -1708,13 +1765,13 @@ max-width: 85%;
 .first-picture,
 .advance-picture {
   height: 100vh;
-  background-image: url(../Images/BG-TUMS-01.png);
+  background-image: url(../Images/SecondTUMS/Tums-01.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .advance-picture {
-  background-image: url(../Images/New\ Adv-01.png);
+  background-image: url(../Images/Taeleem\ Advanced/);
   width: 100%;
 }
 @media (max-width: 980px) {
@@ -2262,7 +2319,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   color: white;
 }
 .tsms-main-page .main-info h2 {
-  font-size: 36px;
+  font-size: 34px;
 }
 .tsms-main-page .main-info p {
   font-size: 16px;
@@ -2901,258 +2958,151 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
 .leaders > div img {
   width: 150px;
 }
-.leaders .leader-one::before {
-  content: 'Ghassan Al-Bayati';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-one:hover::before {
-  width: 100%;
-}
+/* One */
 .leaders .leader-one::after {
   content: 'The former head of the Mathematics Department at Al-Mutamizeen High School. He ranked first in the country in passing percentages for the sixth grade of middle school. He was sent to teach in Algeria, and taught in many model schools.';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-one:hover::after {
-  width: 100%;
+  height: 40%;
 }
 
-.leaders .leader-two::before {
-  content: 'Basma Al-Azzawi';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-two:hover::before {
-  width: 100%;
-}
+/* Two */
 .leaders .leader-two::after {
   content: 'Twenty years of supervising the correction of ministerial exams and setting questions. She holds a degree in life sciences from the University of Baghdad';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-two:hover::after {
-  width: 100%;
+  height: 40%;
 }
 
 /* Three */
-.leaders .leader-three::before {
-  content: 'Alaa Al-Dagher';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-three:hover::before {
-  width: 100%;
-}
 .leaders .leader-three::after {
   content: 'More than thirty years of experience, he has many books of thanks from Rusafa First Education';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-three:hover::after {
-  width: 100%;
+  height: 40%;
 }
 
 /* Four */
-.leaders .leader-four::before {
-  content: 'Muhammad Al-Taie';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-four:hover::before {
-  width: 100%;
-}
 .leaders .leader-four::after {
   content: 'Thirty-four years of experience... Senior teacher, and Head of the Physics Department at Al-Motamayez Secondary School.';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-four:hover::after {
-  width: 100%;
+  height: 40%;
 }
+
 /* Five */
-.leaders .leader-five::before {
-  content: 'Hadi Mohsen Ali';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  overflow: hidden;
-}
-.leaders .leader-five:hover::before {
-  width: 100%;
-}
 .leaders .leader-five::after {
   content: 'More than thirty years of experience, he has many books of thanks from Rusafa First Education';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-five:hover::after {
-  width: 100%;
+  height: 40%;
 }
+
 /* Six */
-.leaders .leader-six::before {
-  content: 'Imad Al-Ali';
-  position: absolute;
-  width: 0;
-  height: 50%;
-  background-color: var(--main-color);
-  top: 0;
-  left: 0;
-  color: rgb(251, 244, 255);
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--main-transition);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.leaders .leader-six {
   overflow: hidden;
-}
-.leaders .leader-six:hover::before {
-  width: 100%;
 }
 .leaders .leader-six::after {
   content: 'Twenty-seven years of experience in the field of teaching chemistry. He taught in distinguished secondary schools in Baghdad.';
   position: absolute;
-  width: 0;
-  height: 50%;
+  width: 100%;
+  height: 0;
   background-color: var(--main-color);
-  top: 50%;
+  bottom: 0;
   transition: var(--main-transition);
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   color: rgb(251, 244, 255);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .leaders .leader-six:hover::after {
-  width: 100%;
+  height: 40%;
 }
 /* End Leaders */
 

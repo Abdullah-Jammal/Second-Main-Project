@@ -12,7 +12,6 @@ close_btn.onclick = () => {
 }
 // End Header
 
-
 // Scroll Up
 let scroll_up = document.querySelector('.scroll-up')
 
@@ -30,7 +29,6 @@ scroll_up.onclick = () => {
     behavior : 'smooth'
   })
 }
-
 // Start Teachers Video
 
 if (document.querySelector('#flagPageone')) {
@@ -49,9 +47,6 @@ let item10 = document.querySelector('.item10')
 let item11 = document.querySelector('.item11')
 let item12 = document.querySelector('.item12')
 let item13 = document.querySelector('.item13')
-
-
-
 
 item1.onclick = () => {
   window.open('https://www.youtube.com/watch?v=Q5FJPMuvol8')
