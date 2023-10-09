@@ -618,12 +618,7 @@ i.menu-icon {
 }
 @media (max-width: 980px) {
   .first-picture-advanced {
-    height: 60vh;
-  }
-}
-@media (max-width: 680px) {
-  .first-picture-advanced {
-    height: 50vh;
+    height: auto;
   }
 }
 @media (max-width: 800px) {
@@ -1798,6 +1793,23 @@ width: 600px;
   color: var(--main-gray);
   font-size: 18px;
 }
+@media (max-width: 1140px) {
+  .main-advanced-page {
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  .main-advanced-page img {
+    display: none;
+  }
+  .main-advanced-page h1,
+  .main-advanced-page p {
+    text-align: center;
+  }
+  .main-advanced-page h1::before {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
 /* End Advanced Ta3leem */
 /* Start Biography */
 .biography {
@@ -2657,6 +2669,7 @@ gap: 40px;
   letter-spacing: 5px;
   margin-bottom: -10px;
   position: relative;
+  text-align: center;
 }
 .main-page-tums .info h1::before {
   content: '';
@@ -2671,10 +2684,25 @@ gap: 40px;
 .main-page-tums .info h2 {
   color: #fff;
   font-size: 28px;
+  text-align: center;
 }
 .main-page-tums .info p {
   color: var(--main-gray);
   text-align: center;
+}
+@media (max-width: 1200px) {
+  .main-page-tums {
+    flex-direction: column;
+    height: auto;
+    margin-top: 100px;
+  }
+  .main-page-tums .image {
+    order: -1;
+  }
+  .main-page-tums .image img {
+    width: 350px;
+    display: none;
+  }
 }
 /* End Main Page TUMS */
 .tums-feature {
@@ -2943,7 +2971,7 @@ gap: 40px;
   }
   .future .future-container .future-boxes .box-one:hover .one {
     transform: translateY(-60px);
-    background-color: #8134FF;
+    background-color: #6334ff;
   }
   .future .future-container .future-boxes .box-one:hover .one p {
     color: white;
@@ -2952,7 +2980,7 @@ gap: 40px;
     color: white;
   }
   .future .future-container .future-boxes .box-one:hover .one button {
-    background-color: #ff00a2;
+    background-color: #ff1365;
   }
   .future .future-container .future-boxes .box-one .one {
     background-color: #DBDEFF;
@@ -3077,12 +3105,12 @@ gap: 40px;
 }
 @media (max-width: 800px) {
   .first-picture {
-    height: 50vh;
+    height: 90vh;
   }
 }
 @media (max-width: 570px) {
   .first-picture {
-    height: 40vh;
+    height: auto;
   }
   .composed h2 {
     text-align: center;
@@ -3471,7 +3499,7 @@ width: 50%;
   width: 80px;
 }
 .firm-advance .box-adv-one .info {
-  width: 1150px;
+  width: 90%;
   height: 170px;
   display: flex;
   flex-direction: column;

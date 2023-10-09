@@ -13,6 +13,7 @@
   --dark-gray : #65656b;
   --main-transition : 300ms;
   --green : #14888B;
+  --advance-color : #BB254B;
 }
 @font-face {
   font-family: ExtraBold;
@@ -1619,7 +1620,7 @@ max-width: 85%;
   }
   .future .future-container .future-boxes .box-one:hover .one {
     transform: translateY(-60px);
-    background-color: #8134FF;
+    background-color: #6334ff;
   }
   .future .future-container .future-boxes .box-one:hover .one p {
     color: white;
@@ -1628,7 +1629,7 @@ max-width: 85%;
     color: white;
   }
   .future .future-container .future-boxes .box-one:hover .one button {
-    background-color: #ff00a2;
+    background-color: #ff1365;
   }
   .future .future-container .future-boxes .box-one .one {
     background-color: #DBDEFF;
@@ -1771,7 +1772,7 @@ max-width: 85%;
   background-repeat: no-repeat;
 }
 .advance-picture {
-  background-image: url(../Images/Taeleem\ Advanced/);
+  background-image: url(../Images/Taeleem\ Advanced/Background-image-01.png);
   width: 100%;
 }
 @media (max-width: 980px) {
@@ -1800,6 +1801,39 @@ max-width: 85%;
     left: 50%;
     transform: translateX(-50%);
   }
+}
+/* Start Advanced Ta3leem */
+.main-advanced-page {
+  height: 120vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85%;
+  margin: auto;
+}
+.main-advanced-page img {
+width: 600px;
+}
+.main-advanced-page .info {
+  max-width: 560px;
+}
+.main-advanced-page h1 {
+  color: var(--main-gray);
+  font-size: 36px;
+  position: relative;
+}
+.main-advanced-page h1::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 1px;
+  background-color: var(--main-gray);
+  left: 0;
+  bottom: 0;
+}
+.main-advanced-page p {
+  color: var(--main-gray);
+  font-size: 18px;
 }
 /* End TUMS */
 
@@ -1908,7 +1942,7 @@ max-width: 85%;
 /* Start Ta3leem Advance */
 .our-mission {
   margin: 20px auto;
-  background-color: #DD0050;
+  background-color: #65123A;
   color: white;
   padding: 24px 0;
 }
@@ -1940,89 +1974,74 @@ max-width: 85%;
 /* Start Our Services Advance */
 .advanced-services {
   margin: 24px 0;
-  /* background: rgb(255,132,177);
-background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%, rgb(255, 255, 255) 100%); */
 }
 .advanced-services h2 {
   margin: 50px 30px;
   font-size: 32px;
   position: relative;
-  color: #65123A;
+  color: var(--advance-color);
   text-align: center;
 }
 .advanced-services h2::before {
   content: '';
   position: absolute;
-  width: 120px;
+  width: 60px;
   height: 1px;
-  background-color: #65123A;
+  background-color: var(--advance-color);
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 50%;
+  transform: translateX(50%);
 }
-.advanced-services .serv-one {
+.serv-advance-container {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.serv-advance-container .one {
+  width: 350px;
+  height: 450px;
   background-color: var(--blue-color);
-  width: 70%;
-  padding: 30px;
-  margin: 22px 0;
-  color: white;
-  border-top-right-radius: 36px;
-  border-bottom-right-radius: 36px;
-  height: 230px;
-  transition: 300ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  transition: 400ms;
 }
-.advanced-services .serv-one:hover {
-  background-color: var(--light-purplr);
+.serv-advance-container .one h3 {
+  background-color: var(--advance-color);
+  color: #fff;
+  width: 280px;
+  padding: 6px;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: 400ms;
 }
-.advanced-services .serv-one h3,
-.advanced-services .serv-two h3 {
-  font-size: 26px;
-  margin-top: -10px;
-}
-.advanced-services .serv-one p,
-.advanced-services .serv-two p {
-  font-size: 18px;
+.serv-advance-container .one p {
+  width: 320px;
+  text-align: center;
   color: var(--main-gray);
-  margin-top: -10px;
+  font-weight: bold;
+  font-size: 14px;
 }
-.advanced-services .serv-two {
-  background-color: var(--main-color);
-  width: 70%;
-  margin-left: auto;
-  padding: 30px;
-  color: white;
-  border-top-left-radius: 36px;
-  border-bottom-left-radius: 36px;
-  height: 230px;
-  transition: 300ms;
+.serv-advance-container .one img {
+  width: 280px;
+  border-radius: 6px;
+  height: 180px;
 }
-.advanced-services .serv-two:hover {
+.serv-advance-container .one:hover h3 {
+  opacity: .8;
+}
+.serv-advance-container .one:hover {
   background-color: var(--light-purplr);
-}
-@media (max-width: 1100px) {
-  .advanced-services {
-    direction: ltr;
-  }
-}
-@media (max-width: 1100px) {
-  .advanced-services .serv-one {
-    height: auto;
-  }
-  .advanced-services .serv-two {
-    height: auto;
-  }
-}
-@media (max-width: 600px) {
-  .advanced-services .serv-two {
-    margin: 14px auto;
-    border-radius: 20px;
-    text-align: center;
-  }
-  .advanced-services .serv-one {
-    margin: auto;
-    border-radius: 20px;
-    text-align: center;
-  }
+  scale: 1.1;
 }
 /* End Our Services Advanced */
 
@@ -2034,7 +2053,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
 .explore-advance h2 {
   text-align: center;
   position: relative;
-  color: #65123A;
+  color: #6a2133;
   font-size: 32px;
 }
 .explore-advance h2::before {
@@ -2045,7 +2064,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   bottom: 0;
   width: 130px;
   height: 1px;
-  background-color: #65123A;
+  background-color: #6a2133;
 }
 .explore-advance .explore-boxes {
   display: flex;
@@ -2059,7 +2078,6 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
 }
 .explore-advance .explore-boxes .one {
   width: 360px;
-  background-color: var(--blue-color);
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -2067,7 +2085,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   align-items: center;
   padding: 12px;
   border-radius: 12px;
-  background-color: #65123A;
+  background-color: var(--advance-color);
   height: 430px;
   transition: 400ms;
   position: relative;
@@ -2082,7 +2100,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   position: absolute;
   width: 0;
   height: 0;
-  background-color: #65123A;
+  background-color: #6a2133;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -2122,7 +2140,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
 .firm-advance h2 {
   text-align: center;
   position: relative;
-  color:#65123A;
+  color:#6a2133;
   font-size: 32px;
 }
 .firm-advance h2::before {
@@ -2130,7 +2148,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   position: absolute;
   width: 200px;
   height: 1px;
-  background-color: #65123A;
+  background-color: #6a2133;
   left: 50%;
   transform: translateX(-50%);
   bottom: -10px;
@@ -2162,7 +2180,7 @@ background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 75, 141) 52%
   box-shadow: 4px 4px 5px #cfcfcf;
 }
 .firm-advance .box-adv-one .img {
-  background-color: #65123A;
+  background-color: var(--advance-color);
   border-radius: 50%;
   width: 120px;
   height: 120px;
