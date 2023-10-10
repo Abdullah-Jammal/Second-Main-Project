@@ -1130,6 +1130,10 @@ footer .footer-container .footer-section img:hover {
   .lessons {
     height: 80vh;
   }
+  .lessons .main-lesson-para::before {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 .lessons .title-lesson {
   max-width: 600px;
@@ -2552,7 +2556,6 @@ gap: 40px;
   }
 }
 /* <!-- End Performance Proctored --> */
-
 /* End Protection */
 
 /* Start Teams */
@@ -2562,7 +2565,7 @@ gap: 40px;
   padding: 20px 0;
 }
 .our-teams .container-teams {
-  max-width: 85%;
+  max-width: 90%;
   margin: auto;
 }
 .our-teams .container-teams .team-container {
@@ -2570,56 +2573,52 @@ gap: 40px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
-.our-teams .container-teams .team-main-para {
-  color: rgb(77, 17, 88);
-  max-width: 450px;
-  font-weight: bold;
-  margin-bottom: 60px;
-  margin-top: -20px;
+.our-teams .container-teams .team-container .one {
+  background-color: var(--blue-color);
+  width: 330px;
+  height: 380px;
+  text-align: center;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 400ms;
 }
-@media (max-width: 1200px) {
-  .our-teams .container-teams h2 {
-    text-align: center;
-  }
-  .our-teams .container-teams .team-main-para {
-    text-align: center;
-    margin: auto;
-  }
+.our-teams .container-teams .team-container .one img {
+  width: 130px;
 }
-.our-teams .container-teams .one {
-  border-radius: 3rem;
-  background: rgb(32,0,88);
-  background: linear-gradient(274deg, rgba(32,0,88,1) 0%, rgba(70,55,112,1) 52%, rgba(7,78,135,1) 100%);
-  width: 300px;
-  padding: 6px 12px;
+.our-teams .container-teams .team-container .one h3 {
+  background-color: var(--main-gray);
+  width: 90%;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  transition: 300ms;
-  margin: 12px;
+  border-radius: 14px;
+  color: var(--main-color);
+  transition: 400ms;
 }
-.our-teams .container-teams .one:hover {
-  scale: 1.1;
-  rotate: 1deg;
+.our-teams .container-teams .team-container .one p {
+  max-width: 280px;
+  color: var(--main-gray);
+  font-size: 14px;
+  height: 250px;
+  transition: 400ms;
 }
-.our-teams .container-teams img {
-  width: 100px;
+.our-teams .container-teams .team-container .one:hover {
+  scale: 1.07;
+  background-color: var(--main-color);
 }
-.our-teams .container-teams .one p {
-  font-weight: bold;
-  color: #fff6ff;
-}
-@media (max-width: 400px) {
-  .our-teams .container-teams .one p {
-    text-align: center;
-  }
+.our-teams .container-teams .team-container .one:hover h3 {
+  background-color: var(--advance-color);
+  color: #fff;
 }
 /* End Teams */
 
 /* Start TUMS */
-
 /* Start tums feature */
 /* Start Ta3leem UMS Header */
 .tums-header {
@@ -2721,7 +2720,7 @@ gap: 40px;
     font-size: 30px;
     position: relative;
     margin-right: -40px;
-    max-width: 700px;
+    text-align: center;
   }
   .tums-feature h2::before {
     content: '';
@@ -2730,7 +2729,8 @@ gap: 40px;
     height: 1px;
     background-color: var(--main-color);
     bottom: -14px;
-    right: 0;
+    right: 50%;
+    transform: translateX(50%);
   }
   .tums-feature .ums-feature-containers {
     display: flex;
@@ -2838,7 +2838,8 @@ gap: 40px;
     font-size: 30px;
     position: relative;
     margin-bottom: 50px;
-    max-width: 700px;
+    /* max-width: 700px; */
+    text-align: center;
   }
   .beneficiary h2::before {
     content: '';
@@ -2847,7 +2848,8 @@ gap: 40px;
     height: 1px;
     background-color: var(--main-color);
     bottom: -14px;
-    right: 0;
+    right: 50%;
+    transform: translateX(50%);
   }
   .beneficiary .bene-conto .box-one {
     display: flex;
@@ -2933,7 +2935,7 @@ gap: 40px;
     color: #3c1089;
     font-weight: bold;
     font-size: 30px;
-    max-width: 700px;
+    text-align: center;
     position: relative;
     margin-bottom: 60px;
   }
@@ -2944,7 +2946,8 @@ gap: 40px;
     height: 1px;
     background-color: var(--main-color);
     bottom: -14px;
-    right: 0;
+    right: 50%;
+    transform: translateX(50%);
   }
   .future .future-container .future-boxes {
     display: flex;
@@ -3033,6 +3036,7 @@ gap: 40px;
   font-weight: bold;
   font-size: 30px;
   position: relative;
+  text-align: center;
 }
 .composed h2::before {
   content: '';
@@ -3041,7 +3045,8 @@ gap: 40px;
   height: 1px;
   background-color: var(--main-color);
   bottom: -10px;
-  right: 0;
+  right: 50%;
+  transform: translateX(50%);
 }
 .composed .composed-container {
   display: flex;
