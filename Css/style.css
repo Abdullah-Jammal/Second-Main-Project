@@ -729,7 +729,6 @@ i.menu-icon {
 
 /* Start About */
 #about{
-  padding: 0 30px;
   margin: auto;
   max-width: 1300px;
 }
@@ -737,7 +736,8 @@ i.menu-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  max-width: 1300px;
+  /* gap: 130px; */
 }
 #about .about-contain .box-one .info {
   margin-bottom: 80px;
@@ -793,8 +793,15 @@ i.menu-icon {
     justify-content: space-between;
     align-items: center;
   }
+  #about .about-contain .box-one .list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   #about .about-contain .box-one .list ul li {
     font-size: 16px;
+    width: 400px;
   }
 }
 #about .about-contain .box-one .list ul li:hover {
@@ -1744,16 +1751,17 @@ padding: 20px 0;
 .main-advanced-page {
   height: 110vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   max-width: 1400px;
   margin: auto;
+  padding: 0 30px;
 }
 .main-advanced-page img {
-width: 600px;
+width: 35rem;
 }
 .main-advanced-page .info {
-  width: 600px;
+  max-width: 600px;
 }
 .main-advanced-page h1 {
   color: var(--main-gray);
@@ -2928,9 +2936,9 @@ gap: 40px;
     color: #3c1089;
     font-weight: bold;
     font-size: 30px;
-    /* text-align: center; */
     position: relative;
     margin-bottom: 60px;
+    text-align: center;
   }
   .future .future-container h2::before {
     content: '';
@@ -2939,8 +2947,8 @@ gap: 40px;
     height: 1px;
     background-color: var(--main-color);
     bottom: -14px;
-    right: 0;
-    /* transform: translateX(50%); */
+    right: 50%;
+    transform: translateX(50%);
   }
   .future .future-container .future-boxes {
     display: flex;
@@ -3439,6 +3447,7 @@ width: 50%;
 .firm-advance {
   max-width: 1300px;
   margin: auto;
+  overflow: hidden;
 }
 .firm-advance h2 {
   text-align: center;
@@ -3533,6 +3542,7 @@ width: 50%;
 /* Start Our Services Advance */
 .advanced-services {
   margin: 24px 0;
+  /* overflow: hidden; */
 }
 .advanced-services h2 {
   margin: 50px 30px;
@@ -3555,9 +3565,10 @@ width: 50%;
   max-width: 1300px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  /* gap: 30px; */
+  padding: 0 30px;
+  gap: 30px;
 }
 .serv-advance-container .one {
   width: 350px;
@@ -3660,6 +3671,11 @@ width: 50%;
   border-radius: 12px;
   transition: 500ms;
   box-shadow: 1px 1px 5px var(--pink);
+}
+@media (max-width: 420px) {
+  .train-sesion-adv .session-one {
+    width: 320px;
+  }
 }
 .train-sesion-adv .session-one:hover .para-info{
   background-color: var(--sky-blue);
