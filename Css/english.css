@@ -104,6 +104,11 @@ body::-webkit-scrollbar-thumb {
     background-image: none;
   }
 }
+@media (max-width: 7800px) {
+  .bg-img {
+    height: 130vh;
+  }
+}
 /* End Bg-img */
 
 /* Start Header */
