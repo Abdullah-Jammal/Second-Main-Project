@@ -92,21 +92,19 @@ body::-webkit-scrollbar-thumb {
 .bg-img,
 .first-picture-advanced,
 .tsms-pic {
-  background-image: url(../Images/3.jpg);
+  background-image: url(../Images/background\ english.png);
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  height: 120vh;
+  height: 100vh;
 }
-@media (max-width: 1230px) {
+@media (max-width: 1200px) {
   .bg-img {
     background-color: var(--main-color);
     background-image: none;
   }
-}
-@media (max-width: 7800px) {
-  .bg-img {
-    height: 130vh;
+  .main-page .main-bg-img img {
+    display: none;
   }
 }
 /* End Bg-img */
@@ -330,11 +328,19 @@ i.menu-icon {
 .main-page {
   height: 120vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
-  max-width: 80%;
+  max-width: 1300px;
   margin: auto;
+}
+@media (max-width: 1230px) {
+  .main-page {
+    direction: ltr;
+  }
+}
+.main-page .main-bg-img img {
+  width: 30rem;
 }
 .main-page .right-div {
   max-width: 1400px;
