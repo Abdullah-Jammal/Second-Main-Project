@@ -3623,3 +3623,167 @@ gap: 40px;
   background-color: var(--main-gray);
 }
 /* End Form */
+
+
+/* Start Register */
+
+/* Start IELTS */
+.main-page-ielts {
+  width: 900px;
+  height: 500px;
+  background-color: transparent;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 930px) {
+  .main-page-ielts {
+    width: 500px;
+  }
+}
+.main-page-ielts .ielts-container {
+  max-width: 500px;
+  text-align: center;
+}
+.main-page-ielts .ielts-container h2 {
+  color: #fff;
+  font-size: 32px;
+}
+.main-page-ielts .ielts-container p {
+  color: #fff;
+  margin-bottom: 60px;
+}
+.main-page-ielts .ielts-container a {
+  text-decoration: none;
+  background-color: var(--orange);
+  color: #dfdfdf;
+  padding: 12px 22px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 300ms;
+}
+.main-page-ielts .ielts-container a:hover {
+  background-color: var(--light-orange);
+  opacity: .7;
+}
+@media (max-width: 520px) {
+  .main-page-ielts {
+    width: 300px;
+    padding: 12px;
+  }
+  .main-page-ielts .ielts-container a {
+    font-size: 16px;
+  }
+}
+
+.register-ielts {
+  margin: 40px 0;
+}
+.register-ielts h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #1F3346;
+  position: relative;
+}
+.register-ielts h2::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 50%;
+  transform: translateX(50%);
+  height: 1px;
+  width: 150px;
+  background-color: #1F3346;
+}
+.register-ielts .register-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.register-ielts .register-container .box-one-ietls {
+  width: 300px;
+  height: 400px;
+  background-color: #1F3346;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 12px;
+  transition: 300ms;
+}
+.register-ielts .register-container .box-one-ietls:hover {
+  scale: 1.06;
+}
+.register-ielts .register-container .box-one-ietls:hover h4 {
+  transform: translateY(-10px);
+}
+.register-ielts .register-container .box-one-ietls span {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  color: #1F3346;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+.register-ielts .register-container .box-one-ietls h4 {
+  background-color: #fff;
+  height: 60px;
+  width: 240px;
+  color: #1F3346;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 12px;
+  transition: 300ms;
+}
+.register-ielts .register-container .box-one-ietls p {
+  text-align: center;
+  height: 140px;
+}
+.register-ielts .register-container .box-one-ietls p a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 300ms;
+}
+.register-ielts .register-container .box-one-ietls p a:hover {
+  color: var(--sky-blue);
+}
+/* End Register */
+
+.bg-img-ielts {
+  background-image: url(../Images/IELTS/rm373batch13-085.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* End IELTS */
