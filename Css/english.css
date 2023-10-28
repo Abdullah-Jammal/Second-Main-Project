@@ -3646,6 +3646,11 @@ gap: 40px;
     width: 500px;
   }
 }
+@media (max-width: 930px) {
+  .main-page-ielts {
+    height: 700px;
+  }
+}
 .main-page-ielts .ielts-container {
   max-width: 500px;
   text-align: center;
@@ -3784,6 +3789,25 @@ gap: 40px;
   align-items: center;
   flex-direction: column;
 }
+
+@media (max-width: 1230px) {
+  .main-container-ielts {
+    width: 600px;
+  }
+}
+
+@media (max-width: 660px) {
+  .main-container-ielts {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container-ielts {
+    width: 280px;
+  }
+}
+
 
 
 /* End IELTS */
