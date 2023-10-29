@@ -3633,7 +3633,7 @@ gap: 40px;
   height: 500px;
   background-color: transparent;
   border-radius: 12px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
   box-shadow: 0 0 10px rgba(0, 0, 0, .4);
   margin-top: 50px;
   display: flex;
@@ -3644,11 +3644,6 @@ gap: 40px;
 @media (max-width: 930px) {
   .main-page-ielts {
     width: 500px;
-  }
-}
-@media (max-width: 930px) {
-  .main-page-ielts {
-    height: 700px;
   }
 }
 .main-page-ielts .ielts-container {
@@ -3688,6 +3683,7 @@ gap: 40px;
   }
 }
 
+/* Start Register */
 .register-ielts {
   margin: 40px 0;
 }
@@ -3708,7 +3704,7 @@ gap: 40px;
   background-color: #1F3346;
 }
 .register-ielts .register-container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -3719,7 +3715,7 @@ gap: 40px;
 .register-ielts .register-container .box-one-ietls {
   width: 300px;
   height: 400px;
-  background-color: #1F3346;
+  background-color: var(--advance-color);
   border-radius: 12px;
   color: #fff;
   display: flex;
@@ -3778,8 +3774,106 @@ gap: 40px;
 }
 /* End Register */
 
+.spans {
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Start Payment */
+.payment {
+  max-width: 1000px;
+  margin: auto;
+}
+.payment h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #1F3346;
+  position: relative;
+}
+.payment h2::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 50%;
+  transform: translateX(50%);
+  height: 1px;
+  width: 150px;
+  background-color: #1F3346;
+}
+.payment-info {
+  margin-top: 30px;
+}
+.payment-info p {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  height: 100px;
+  max-width: 1000px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.payment-info .uniq-para::after {
+  content: '';
+  position: absolute;
+  height: 65px;
+  width: 20px;
+  background-color: var(--advance-color);
+  border-radius: 20px;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* End Payment */
+
+/* Start Register */
+.register {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.register h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #1F3346;
+  position: relative;
+}
+.register h2::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 50%;
+  transform: translateX(50%);
+  height: 1px;
+  width: 150px;
+  background-color: #1F3346;
+}
+.register .register-container {
+  background-color: var(--advance-color);
+  border-radius: 20px;
+  padding: 20px;
+}
+.bold-para {
+  font-weight: bold;
+  color: #d5f4ff;
+  margin-bottom: 20px;
+}
+.register .register-container p {
+  max-width: 1000px;
+}
+.benefit-para {
+  color: #e3f8ff;
+}
+.number-contact {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--sky-blue);
+}
+/* End Register */
+
+/* End IELTS */
+
 .bg-img-ielts {
-  background-image: url(../Images/IELTS/rm373batch13-085.jpg);
+  background-image: url(../Images/ielts\ course\ bg.png);
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -3789,25 +3883,3 @@ gap: 40px;
   align-items: center;
   flex-direction: column;
 }
-
-@media (max-width: 1230px) {
-  .main-container-ielts {
-    width: 600px;
-  }
-}
-
-@media (max-width: 660px) {
-  .main-container-ielts {
-    width: 400px;
-  }
-}
-
-@media (max-width: 500px) {
-  .main-container-ielts {
-    width: 280px;
-  }
-}
-
-
-
-/* End IELTS */
