@@ -245,7 +245,7 @@ i.menu-icon {
 .secend-header {
   display: none;
   padding: 10px 30px;
-  margin: auto;
+  margin: 10px auto;
 }
 .secend-header-withoutBG {
   display: none;
@@ -3644,6 +3644,12 @@ gap: 40px;
 @media (max-width: 930px) {
   .main-page-ielts {
     width: 500px;
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 530px) {
+  .main-page-ielts {
+    height: auto;
   }
 }
 .main-page-ielts .ielts-container {
@@ -3686,6 +3692,12 @@ gap: 40px;
 /* Start Register */
 .register-ielts {
   margin: 40px 0;
+}
+@media (max-width: 1230px) {
+  .register-ielts {
+    direction: ltr;
+    padding: 0 20px;
+  }
 }
 .register-ielts h2 {
   text-align: center;
@@ -3784,6 +3796,11 @@ gap: 40px;
   max-width: 1000px;
   margin: auto;
 }
+@media (max-width: 1230px) {
+  .payment {
+    direction: ltr;
+  }
+}
 .payment h2 {
   text-align: center;
   font-size: 36px;
@@ -3824,12 +3841,28 @@ gap: 40px;
   top: 50%;
   transform: translateY(-50%);
 }
+@media (max-width: 1140px) {
+  .payment-info .uniq-para::after {
+    display: none;
+  }
+  .payment-info p {
+    height: auto;
+    margin-bottom: 45px;
+    padding: 24px;
+  }
+}
 /* End Payment */
 
 /* Start Register */
 .register {
   max-width: 1200px;
   margin: 20px auto;
+}
+@media (max-width: 1250px) {
+  .register {
+    width: 80%;
+    direction: ltr;
+  }
 }
 .register h2 {
   text-align: center;
@@ -3868,6 +3901,11 @@ gap: 40px;
   font-weight: bold;
   color: var(--sky-blue);
 }
+@media (max-width: 400px) {
+  .number-contact {
+    font-size: 14px;
+  }
+}
 /* End Register */
 
 /* End IELTS */
@@ -3882,4 +3920,27 @@ gap: 40px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 450px) {
+  .bg-img-ielts {
+    height: 115vh;
+  }
+}
+@media (max-width: 1230px) {
+  .bg-img-ielts {
+    justify-content: flex-start;
+  }
+}
+.main-container-ielts {
+  width: 600px;
+}
+@media (max-width: 700px) {
+  .main-container-ielts {
+    width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .main-container-ielts {
+    width: 240px;
+  }
 }

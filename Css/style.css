@@ -141,6 +141,16 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 450px) {
+  .bg-img-ielts {
+    height: 115vh;
+  }
+}
+@media (max-width: 1230px) {
+  .bg-img-ielts {
+    justify-content: flex-start;
+  }
+}
 
 /* End Bg-img */
 
@@ -364,7 +374,7 @@ i.menu-icon {
 .secend-header {
   display: none;
   padding: 10px 30px;
-  margin: auto;
+  margin: 10px auto;
 }
 .secend-header-withoutBG {
   display: none;
@@ -459,6 +469,14 @@ i.menu-icon {
 .main-page .right-div {
   max-width: 1400px;
   margin-right: 50px;
+}
+@media (max-width: 450px) {
+  .main-page .right-div {
+    margin-right: 0;
+  }
+  .main-page {
+    height: 90vh;
+  }
 }
 .main-page h1 {
   color: rgb(247, 236, 255);
@@ -4372,6 +4390,7 @@ width: 50%;
   position: relative;
   display: flex;
   align-items: center;
+  padding: 0 30px;
 }
 .payment-info .uniq-para::after {
   content: '';
@@ -4384,12 +4403,26 @@ width: 50%;
   top: 50%;
   transform: translateY(-50%);
 }
+@media (max-width: 1140px) {
+  .payment-info .uniq-para::after {
+    display: none;
+  }
+  .payment-info p {
+    height: auto;
+    margin-bottom: 45px;
+  }
+}
 /* End Payment */
 
 /* Start Register */
 .register {
   max-width: 1200px;
   margin: 20px auto;
+}
+@media (max-width: 1250px) {
+  .register {
+    width: 80%;
+  }
 }
 .register h2 {
   text-align: center;
@@ -4427,6 +4460,11 @@ width: 50%;
   font-size: 20px;
   font-weight: bold;
   color: var(--sky-blue);
+}
+@media (max-width: 400px) {
+  .number-contact {
+    font-size: 14px;
+  }
 }
 /* End Register */
 
