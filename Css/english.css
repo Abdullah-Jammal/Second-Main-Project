@@ -3944,3 +3944,8 @@ gap: 40px;
     width: 240px;
   }
 }
+
+/* a Color */
+.important-color {
+  color: #fff !important;
+}

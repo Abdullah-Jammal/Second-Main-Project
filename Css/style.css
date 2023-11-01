@@ -4469,3 +4469,8 @@ width: 50%;
 /* End Register */
 
 /* End IELTS */
+
+/* a Color */
+.important-color {
+  color: #fff !important;
+}
