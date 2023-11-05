@@ -374,7 +374,7 @@ i.menu-icon {
 .secend-header {
   display: none;
   padding: 10px 30px;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 .secend-header-withoutBG {
   display: none;
@@ -1296,42 +1296,55 @@ footer .footer-container .footer-section img:hover {
 }
 .high-school .teachers .item1 {
   background-image: url(../Images/high-school-teachers/abdrazak.png);
+  background-size: contain;
 }
 .high-school .teachers .item2 {
   background-image: url(../Images/high-school-teachers/adam.png);
+  background-size: contain;
 }
 .high-school .teachers .item3 {
   background-image: url(../Images/high-school-teachers/ahia_1.png);
+  background-size: contain;
 }
 .high-school .teachers .item4 {
   background-image: url(../Images/high-school-teachers/ahia_2.png);
+  background-size: contain;
 }
 .high-school .teachers .item5 {
   background-image: url(../Images/high-school-teachers/ahia_ramla.png);
+  background-size: contain;
 }
 .high-school .teachers .item6 {
   background-image: url(../Images/high-school-teachers/MicrosoftTeams-image\ \(5\).png);
+  background-size: contain;
 }
 .high-school .teachers .item7 {
   background-image: url(../Images/high-school-teachers/gold.png);
+  background-size: contain;
 }
 .high-school .teachers .item8 {
   background-image: url(../Images/high-school-teachers/mahmoud.png);
+  background-size: contain;
 }
 .high-school .teachers .item9 {
   background-image: url(../Images/high-school-teachers/mathkh.png);
+  background-size: contain;
 }
 .high-school .teachers .item10 {
   background-image: url(../Images/high-school-teachers/mustafa.png);
+  background-size: contain;
 }
 .high-school .teachers .item11 {
   background-image: url(../Images/high-school-teachers/nour.png);
+  background-size: contain;
 }
 .high-school .teachers .item12 {
   background-image: url(../Images/high-school-teachers/rezan1.png);
+  background-size: contain;
 }
 .high-school .teachers .item13 {
   background-image: url(../Images/high-school-teachers/saliem.png);
+  background-size: contain;
 }
 
 /* End Lessons */
@@ -1350,21 +1363,27 @@ footer .footer-container .footer-section img:hover {
 }
 .primary-school .primary-container .box1 {
   background-image: url(../Images/primary/arabic.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box2 {
   background-image: url(../Images/primary/bio.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box3 {
   background-image: url(../Images/primary/chemistry.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box4 {
   background-image: url(../Images/primary/english.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box5 {
   background-image: url(../Images/primary/math.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box6 {
   background-image: url(../Images/primary/physics\ .png);
+  background-size: contain;
 }
 /* End Primary */
 
@@ -1856,6 +1875,11 @@ width: 35rem;
   .main-advanced-page h1::before {
     right: 50%;
     transform: translateX(50%);
+  }
+}
+@media (max-width: 700px) {
+  .main-advanced-page {
+    margin-top: 0;
   }
 }
 /* End Advanced Ta3leem */
@@ -2764,6 +2788,7 @@ gap: 40px;
   .main-page-tums .info h2,
   .main-page-tums .info p {
     text-align: center;
+    padding: 0 12px;
   }
   .main-page-tums .image {
     order: -1;
@@ -3378,6 +3403,8 @@ width: 50%;
 .ta3leem-platform .paltform-container .platform-boxes .box-one .one p {
   color: white;
   font-weight: bold;
+  text-align: center;
+  padding: 0 8px;
 }
 .ta3leem-platform .paltform-container .platform-boxes .box-one .one img {
   width: 120px;

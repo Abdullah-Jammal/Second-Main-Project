@@ -245,7 +245,7 @@ i.menu-icon {
 .secend-header {
   display: none;
   padding: 10px 30px;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 .secend-header-withoutBG {
   display: none;
@@ -422,7 +422,8 @@ i.menu-icon {
 @media (max-width: 1230px) {
   .main-page {
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 40px;
   }
   .main-page .right-div {
     display: flex;
@@ -2933,42 +2934,55 @@ max-width: 500px;
 }
 .high-school .teachers .item1 {
   background-image: url(../Images/high-school-teachers/abdrazak.png);
+  background-size: contain;
 }
 .high-school .teachers .item2 {
   background-image: url(../Images/high-school-teachers/adam.png);
+  background-size: contain;
 }
 .high-school .teachers .item3 {
   background-image: url(../Images/high-school-teachers/ahia_1.png);
+  background-size: contain;
 }
 .high-school .teachers .item4 {
   background-image: url(../Images/high-school-teachers/ahia_2.png);
+  background-size: contain;
 }
 .high-school .teachers .item5 {
   background-image: url(../Images/high-school-teachers/ahia_ramla.png);
+  background-size: contain;
 }
 .high-school .teachers .item6 {
   background-image: url(../Images/high-school-teachers/MicrosoftTeams-image\ \(5\).png);
+  background-size: contain;
 }
 .high-school .teachers .item7 {
   background-image: url(../Images/high-school-teachers/gold.png);
+  background-size: contain;
 }
 .high-school .teachers .item8 {
   background-image: url(../Images/high-school-teachers/mahmoud.png);
+  background-size: contain;
 }
 .high-school .teachers .item9 {
   background-image: url(../Images/high-school-teachers/mathkh.png);
+  background-size: contain;
 }
 .high-school .teachers .item10 {
   background-image: url(../Images/high-school-teachers/mustafa.png);
+  background-size: contain;
 }
 .high-school .teachers .item11 {
   background-image: url(../Images/high-school-teachers/nour.png);
+  background-size: contain;
 }
 .high-school .teachers .item12 {
   background-image: url(../Images/high-school-teachers/rezan1.png);
+  background-size: contain;
 }
 .high-school .teachers .item13 {
   background-image: url(../Images/high-school-teachers/saliem.png);
+  background-size: contain;
 }
 /* End Lessons */
 
@@ -2986,21 +3000,27 @@ max-width: 500px;
 }
 .primary-school .primary-container .box1 {
   background-image: url(../Images/primary/arabic.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box2 {
   background-image: url(../Images/primary/bio.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box3 {
   background-image: url(../Images/primary/chemistry.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box4 {
   background-image: url(../Images/primary/english.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box5 {
   background-image: url(../Images/primary/math.png);
+  background-size: contain;
 }
 .primary-school .primary-container .box6 {
   background-image: url(../Images/primary/physics\ .png);
+  background-size: contain;
 }
 /* End Primary */
 
