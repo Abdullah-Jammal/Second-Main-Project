@@ -141,7 +141,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   flex-direction: column;
 }
-@media (max-width: 450px) {
+@media (max-width: 520px) {
   .bg-img-ielts {
     height: 115vh;
   }
@@ -1203,6 +1203,13 @@ footer .footer-container .footer-section img:hover {
 @media (max-width:500px) {
   .lessons {
     height: 100vh;
+    margin-top: -150px;
+  }
+}
+@media (max-width:700px) {
+  .lessons {
+    height: 100vh;
+    margin-top: -150px;
   }
 }
 .high-school {
@@ -4069,6 +4076,11 @@ width: 50%;
     order: -1;
   }
 }
+@media (max-width: 800px) {
+  .iframe .newIfram {
+    width: 500px;
+  }
+}
 .login-video .videos .video {
   margin-right: 50px;
 }
@@ -4243,8 +4255,9 @@ width: 50%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 10px;
+  padding-bottom: 42px;
 }
 @media (max-width: 930px) {
   .main-page-ielts {
@@ -4495,6 +4508,34 @@ width: 50%;
 }
 /* End Register */
 
+.uniHouse {
+  width: 200px;
+  height: 50px;
+}
+.adv-pic-ilts {
+  width: 170px;
+}
+@media (max-width: 550px) {
+  .uniHouse {
+    width: 200px;
+  }
+  .main-page-ielts {
+    height: 650px;
+  }
+}
+
+.unihouse-adv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+@media (max-width: 520px) {
+  .unihouse-adv {
+    flex-direction: column;
+  }
+}
 /* End IELTS */
 
 /* a Color */

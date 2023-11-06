@@ -3650,12 +3650,12 @@ gap: 40px;
 /* Start IELTS */
 .main-page-ielts {
   width: 900px;
-  height: 500px;
+  height: 606px;
   background-color: transparent;
   border-radius: 12px;
   backdrop-filter: blur(1px);
   box-shadow: 0 0 10px rgba(0, 0, 0, .4);
-  margin-top: 50px;
+  margin-top: 91px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3665,11 +3665,6 @@ gap: 40px;
   .main-page-ielts {
     width: 500px;
     padding: 30px 20px;
-  }
-}
-@media (max-width: 530px) {
-  .main-page-ielts {
-    height: auto;
   }
 }
 .main-page-ielts .ielts-container {
@@ -3941,16 +3936,18 @@ gap: 40px;
   align-items: center;
   flex-direction: column;
 }
-@media (max-width: 450px) {
-  .bg-img-ielts {
-    height: 115vh;
-  }
-}
 @media (max-width: 1230px) {
   .bg-img-ielts {
     justify-content: flex-start;
+    height: 120vh;
   }
 }
+@media (max-width: 520px) {
+  .bg-img-ielts {
+    height: 140vh;
+  }
+}
+
 .main-container-ielts {
   width: 600px;
 }
@@ -3965,6 +3962,34 @@ gap: 40px;
   }
 }
 
+.uniHouse {
+  width: 200px;
+  height: 50px;
+}
+.adv-pic-ilts {
+  width: 170px;
+}
+@media (max-width: 550px) {
+  .uniHouse {
+    width: 200px;
+  }
+  .main-page-ielts {
+    height: 850px;
+  }
+}
+
+.unihouse-adv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+@media (max-width: 520px) {
+  .unihouse-adv {
+    flex-direction: column;
+  }
+}
 /* a Color */
 .important-color {
   color: #fff !important;

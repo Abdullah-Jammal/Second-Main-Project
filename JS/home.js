@@ -71,7 +71,6 @@ if(document.querySelector('#flagPageone')) {
     }
   })
 }
-
 }
 
 
